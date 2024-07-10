@@ -617,7 +617,7 @@ header .openList .submenu2:hover .submenu1-2 a {
     }
 
     header .searchBar2 {
-        margin: 20px 0;
+        margin: 50px 0;
         position: relative;
     
     }
@@ -627,6 +627,7 @@ header .openList .submenu2:hover .submenu1-2 a {
         position: absolute;
         top: 25%;
         right: 10px;
+        cursor: pointer;
     
     }
     
@@ -636,8 +637,8 @@ header .openList .submenu2:hover .submenu1-2 a {
         border: 1px solid white;
         color: white;
         width: 100%;
-      
-        border-radius: 15px;
+        padding: 10px 0;
+        border-radius: 30px;
         padding-left: 10px;
     
     }
@@ -673,9 +674,11 @@ header .openList .submenu2:hover .submenu1-2 a {
         overflow-y: scroll;
   
     }
+
     header .nav2::-webkit-scrollbar{
-        width: 0;
+      width: 0;
     }
+
     header .nav2 .logo2{
        margin-top: 50px;
     }
