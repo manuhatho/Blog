@@ -670,9 +670,11 @@ header .openList .submenu2:hover .submenu1-2 a {
         transform: translateX(500px);
         opacity: 1;
         transition: 0.4s cubic-bezier(.17,.84,.44,1);
-     
-        
-        
+        overflow-y: scroll;
+  
+    }
+    header .nav2::-webkit-scrollbar{
+        width: 0;
     }
     header .nav2 .logo2{
        margin-top: 50px;
