@@ -811,7 +811,7 @@ header .nav2 .Nav2submenu1-2 {
 }
 
 header .nav2 .Nav2submenu1-2.active3 {
-    height: 90px;
+    height: 73px;
     overflow-y: hidden;
     transition: 0.3s ease;
     transition-property: height;
