@@ -672,6 +672,7 @@ header .openList .submenu2:hover .submenu1-2 a {
         opacity: 1;
         transition: 0.4s cubic-bezier(.17,.84,.44,1);
         overflow-y: scroll;
+        font-family: poppins;
   
     }
 
@@ -690,7 +691,7 @@ header .openList .submenu2:hover .submenu1-2 a {
 
     header .nav2 li {
         border-bottom: 1px solid white;
-        padding: 10px 0;
+        padding: 5px 0;
     }
 
     header .nav2 a {
