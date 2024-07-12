@@ -502,12 +502,13 @@ main .content {
 }
 main .content .leftBlock .head h1{
     font-weight: 400;
+    font-size: 1.6rem;
     color: var(--beige);
 }
 main .content .leftBlock .head{
     text-align: center;
     font-family: poppins;
-    border: 2px solid var(--vert);
+    border: 1px solid var(--vert);
     padding: 15px;
     border-radius: 100px;
 }
@@ -617,6 +618,11 @@ main .content .galleryContent button i{
 @media (max-width:1024px) {}
 
 @media (max-width:1007px) {
+    main .content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     main .content .leftBlock .head{
         width: fit-content;
         margin: 0 auto;
@@ -633,6 +639,24 @@ main .content .galleryContent button i{
     main .content .galleryContent button{
         float:none;
        
+    }
+  
+    main .content .galleryContent {
+        height: auto;
+    }
+    main .content .galleryContent img{
+        width: 100%;
+        height: auto;
+        border-radius: 30px;
+        object-fit: cover;
+    
+    }
+    main .content .leftBlock{
+        max-width: 100%;
+    }
+    main .content .rightBlock{
+        max-width: 100%;
+        margin-left: 0;
     }
 }
 @media (max-width:990px) {
@@ -1045,13 +1069,6 @@ main .content .leftBlock .head h1{
 @media (max-width:768px) {}
 
 /* sm */
-@media (max-width:723px) {
-    main .content{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
 @media (max-width:640px) {}
 
 @media (max-width:600px) {
@@ -1066,12 +1083,6 @@ main .content .leftBlock .head h1{
         max-width: 100%;
         text-align: center;
     }
-    main .content .leftBlock{
-        max-width: 100%;
-    }
-    main .content .rightBlock{
-        max-width: 100%;
-        margin-left: 0;
-    }
+
     
 }
