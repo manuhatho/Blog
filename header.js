@@ -27,6 +27,15 @@ function menu() {
         
     });
     
+    blend.addEventListener("click", ()=>{
+      menu2.classList.toggle("active");
+      menu.classList.toggle("active");
+      nav2.classList.remove("active");
+      blend.classList.remove("active");
+      body.classList.remove("active");
+  
+    })
+    
 }
 menu()
 
@@ -73,6 +82,16 @@ angleDown3.addEventListener("click", () => {
    
    
   });
+
+
+  blend.addEventListener("click", ()=>{
+    menu2.classList.toggle("active");
+    menu.classList.toggle("active");
+    nav2.classList.remove("active");
+    blend.classList.remove("active");
+    body.classList.remove("active");
+
+  })
 
 
  
