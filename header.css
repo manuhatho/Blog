@@ -2,7 +2,8 @@
     --vert: #1a6b69;
     --vertB: #217776;
     --blue:#ffffff;
-    --rosange: linear-gradient(to right, white 0%,#fca491aa 0%, #f57093c9 40%, #cda0cac2 100%);
+    --rosange: linear-gradient(to right, white 0%,#fca491aa 0%, #f57093a0 40%, #cda0ca80 100%);
+    --rosange2: linear-gradient(to top, white 0%,#fca491aa 0%, #f57093a0 40%, #cda0ca80 100%);
 
 }
 
@@ -665,7 +666,7 @@ header .openList .submenu2:hover .submenu1-2 a {
     header .nav2 {
         display: block;
         position: fixed;
-        background: var(--rosange);
+        background: var(--rosange2);
         width: 100%;
         max-width: 30%;
         height: 100%;
@@ -763,7 +764,7 @@ header #list4{
 
 header .nav2 .Nav2submenu1-1.active {
     overflow-y: hidden;
-    height: 0 ;
+    height: 0;
     transition: 0.3s ease;
     transition-property: height;
     padding-left: 10px;
@@ -777,13 +778,12 @@ header .nav2 .Nav2submenu1-1 {
     transition: 0.3s ease;
     transition-property: height;
     padding-left: 10px;
-
-
+    
 
 }
 
 header .nav2 .Nav2submenu1-1.active2 {
-    height: 120px;
+    height: 146px;
     overflow-y: hidden;
     transition: 0.3s ease;
     transition-property: height;
