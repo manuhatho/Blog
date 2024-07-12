@@ -1,6 +1,7 @@
 :root {
-    --blue: #1a6b69;
-    --blueB: #217776;
+    --vert: #1a6b69;
+    --vertB: #217776;
+    --blue:#ffffff;
     --rosange: linear-gradient(to right, white 0%,#fca491aa 0%, #f57093c9 40%, #cda0cac2 100%);
 
 }
@@ -101,7 +102,7 @@ header .menu .bar {
     top: 43%;
   
     height: 3px;
-    background-color:white;
+    background-color:var(--blue);
     display: block;
     /* margin-bottom: 4px; */
     border-radius: 2px;
@@ -114,7 +115,7 @@ header .menu:before{
     content: "";
     width: 100%;
     height: 3px;
-    background-color:  rgb(255, 177, 68);
+    background-color: var(--blue);
     display: block;
     /* margin-bottom: 4px; */
     border-radius: 2px;
@@ -130,7 +131,7 @@ header .menu:after {
     position: absolute;
     width: 45%;
     height: 3px;
-    background-color: #119939 ;
+    background-color: var(--blue);
     display: block;
     right: 0;
     bottom: 0;
@@ -147,7 +148,7 @@ header .menu.active:after {
     content: "";
     width: 70%;
     height: 3px;
-    background-color: var(--blue) !important;
+    background-color: var(--vert) !important;
     display: block;
     margin-bottom: 4px;
     border-radius: 2px;
@@ -211,11 +212,11 @@ header .nav li {
     transition: 0.15s ease;
 }
 header .nav a:hover{
-    color: var(--blue);
+    color: var(--vert);
     transition: 0.15s ease;
 }
 header .nav #home{
-    color: var(--blue);
+    color: var(--vert);
 }
 header .nav #list1{
     position: relative;
@@ -228,7 +229,7 @@ header .nav #list1:before{
    border-radius: 3px;
    left: 0;
    top: 0;
-   background-color: var(--blue);
+   background-color: var(--vert);
    display: block;
 
 
@@ -241,7 +242,7 @@ header .nav #list1:after{
    border-radius: 3px;
    right: 0;
    bottom: 0;
-   background-color: var(--blue);
+   background-color: var(--vert);
    display: block;
 }
 header .nav #list2{
@@ -325,7 +326,7 @@ header .nav #list4:after{
 
 header nav .submenu1 li:hover,
 header nav .submenu2 li:hover{
-    background-color: var(--blueB);
+    background-color: var(--vertB);
 
 }
 header nav .submenu1 a:hover,
@@ -381,7 +382,7 @@ header .openList .submenu a {
 }
 
 header .openList .fa-angle-down {
-    color: var(--blue);
+    color: var(--vert);
     vertical-align: middle;
 }
 
@@ -401,7 +402,7 @@ header .openList:hover .submenu {
     width: 125px;
     height: auto;
     margin-left: 20px;
-    background-color: var(--blue);
+    background-color: var(--vert);
     /* text-align: center; */
     backdrop-filter: blur(5px);
     border: 1px solid black;
@@ -449,8 +450,8 @@ header .openList .submenu1:hover .submenu1-1 {
     left: 123px;
     top: -1px;
     width: 200px;
-    background-color: var(--blue);
-    border: 1px solid var(--blue);
+    background-color: var(--vert);
+    border: 1px solid var(--vert);
 
 
 }
@@ -465,8 +466,8 @@ header .openList .submenu2:hover .submenu1-2 {
     left: 123px;
     top: 40px;
     width: 200px;
-    background-color: var(--blue);
-    border: 1px solid var(--blue);
+    background-color: var(--vert);
+    border: 1px solid var(--vert);
 
 }
 
@@ -535,7 +536,7 @@ header .openList .submenu2:hover .submenu1-2 a {
     header .menu2 .bar {
         width: 100%;
         height: 3px;
-        background-color: var(--blue);
+        background-color: white;
         display: block;
         margin-bottom: 4px;
         border-radius: 2px;
@@ -558,7 +559,7 @@ header .openList .submenu2:hover .submenu1-2 a {
         content: "";
         width: 100%;
         height: 3px;
-        background-color:var(--blue);
+        background-color:white;
         display: block;
         margin-bottom: 4px;
         border-radius: 2px;
@@ -575,7 +576,7 @@ header .openList .submenu2:hover .submenu1-2 a {
         content: "";
         width: 70%;
         height: 3px;
-        background-color: var(--blue);
+        background-color: white;
         display: block;
         margin-bottom: 4px;
         border-radius: 2px;
@@ -726,7 +727,7 @@ header .openList .submenu2:hover .submenu1-2 a {
     }
 
     header .nav2 .Nav2submenu1.active {
-        height:40px;
+        height:36px;
         transition: 0.3s ease;
         transition-property: height;
 
@@ -745,13 +746,16 @@ header .openList .submenu2:hover .submenu1-2 a {
     }
 
     header .nav2 .Nav2submenu2.active {
-        height:40px;
+        height:37px;
         transition: 0.3s ease;
         transition-property: height;
-
-
+        
+        
     }
-
+    
+}
+header #list4{
+    border-bottom: none;
 }
 
 
@@ -842,7 +846,7 @@ header .nav2 #angleDown3 {
     margin-right: 20px;
     cursor: pointer;
     transition: 0.15s ease;
-    color: var(--blue);
+    color: white;
 
     transition-property: transform;
 }
