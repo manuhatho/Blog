@@ -1,8 +1,8 @@
 :root {
-    --blue: rgb(32, 47, 100);
-    --blueB: rgb(19, 33, 80);
-    --rosange: linear-gradient(to right, rgb(215, 70, 157)0%, rgb(252, 162, 83) 0%, rgb(215, 70, 157)100%);
-    --rosange2: linear-gradient(to top, rgb(215, 70, 157)0%, rgb(252, 162, 83) 0%, rgb(215, 70, 157)100%);
+    --blue: #1a6b69;
+    --blueB: #217776;
+    --rosange: linear-gradient(to right, white 0%,#fca491aa 0%, #f57093c9 40%, #cda0cac2 100%);
+
 }
 
 
@@ -22,6 +22,11 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+body{
+    background-color: white;
+    color: black;
 }
 
 .preventXoverflow {
@@ -46,7 +51,7 @@ header .content {
     width: 100%;
     max-width: 90%;
     margin: 0 auto;
-    /* padding: 5px 0; */
+    padding: 3px 0;
 
 }
 
@@ -400,7 +405,7 @@ header .openList:hover .submenu {
     /* text-align: center; */
     backdrop-filter: blur(5px);
     border: 1px solid black;
-    top: 49px;
+    top: 46px;
 
 
 
@@ -659,7 +664,7 @@ header .openList .submenu2:hover .submenu1-2 a {
     header .nav2 {
         display: block;
         position: fixed;
-        background: var(--rosange2);
+        background: var(--rosange);
         width: 100%;
         max-width: 30%;
         height: 100%;
