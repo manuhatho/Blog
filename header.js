@@ -84,15 +84,35 @@ angleDown3.addEventListener("click", () => {
   });
 
 
-  blend.addEventListener("click", ()=>{
-    menu2.classList.toggle("active");
-    menu.classList.toggle("active");
-    nav2.classList.remove("active");
-    blend.classList.remove("active");
-    body.classList.remove("active");
 
-  })
 
+  function scroll(){
+    const header = document.querySelector("header");
+    let previewPosition = 0;
+    document.addEventListener("scroll", ()=>{
+      console.log('scroll');
+
+      let scrollTop = window.scrollY || document.documentElement.scrollTop ;
+      if(scrollTop > previewPosition){
+        header.style.top = "-100px";
+     
+
+      }else{
+        header.style.top = "0";
+      
+      }
+
+    previewPosition = scrollTop;
+
+    
+      
+
+    })
+  }
+  scroll();
+
+
+     
 
  
 
