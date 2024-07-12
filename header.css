@@ -60,7 +60,7 @@ header .content {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 90%;
+    max-width: 95%;
     margin: 0 auto;
     padding: 3px 0;
 
@@ -490,7 +490,7 @@ header .openList .submenu2:hover .submenu1-2 a {
 
 main{
     width: 100%;
-    max-width: 90%;
+    max-width: 95%;
     margin: 0 auto;
     padding-top: 30px;
 }
