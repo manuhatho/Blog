@@ -11,6 +11,7 @@
 }
 
 
+
 @font-face {
     font-family:"apple" ;
     src: url(./Assets/Fonts/Apple_Berry.otf);
@@ -32,6 +33,11 @@ html {
 body{
     background-color: white;
     color: black;
+   
+}
+body.active{
+    overflow-y: hidden;
+    
 }
 
 .preventXoverflow {

@@ -5,12 +5,16 @@ function menu() {
   const menu = document.querySelector(".menu");
   const menu2 = document.querySelector(".menu2");
   const nav2 = document.querySelector(".nav2");
+  const body = document.querySelector("body");
+  
  
   
   menu.addEventListener("click", () => {
       menu.classList.toggle("active");
       nav2.classList.toggle("active");
       blend.classList.toggle("active");
+      body.classList.toggle("active");
+      
       
     });
     menu2.addEventListener("click", () => {
@@ -18,6 +22,7 @@ function menu() {
       menu.classList.toggle("active");
       nav2.classList.remove("active");
       blend.classList.remove("active");
+      body.classList.remove("active");
 
         
     });
