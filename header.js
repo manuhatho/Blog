@@ -1,4 +1,27 @@
 
+function scroll(){
+  const header = document.querySelector("header");
+  let previewPosition = 0;
+  document.addEventListener("scroll", ()=>{
+    console.log('scroll');
+
+    let scrollTop = window.scrollY || document.documentElement.scrollTop ;
+    if(scrollTop > previewPosition){
+      header.style.top = "-100px";
+   
+
+    }else{
+      header.style.top = "0";
+    
+    }
+
+  previewPosition = scrollTop;
+
+  
+
+  })
+}
+scroll();
 
 function menu() {
   const blend = document.querySelector(".blend");
@@ -6,6 +29,7 @@ function menu() {
   const menu2 = document.querySelector(".menu2");
   const nav2 = document.querySelector(".nav2");
   const body = document.querySelector("body");
+  const header = document.querySelector("header");
   
  
   
@@ -14,6 +38,15 @@ function menu() {
       nav2.classList.toggle("active");
       blend.classList.toggle("active");
       body.classList.toggle("active");
+      header.classList.add("active");
+
+    //   const menuBtn = document.querySelector(".menu");
+    // menuBtn.addEventListener("click", () => {
+    //     document.removeEventListener("scroll", scroll);
+    // });
+   
+     
+
       
       
     });
@@ -23,6 +56,7 @@ function menu() {
       nav2.classList.remove("active");
       blend.classList.remove("active");
       body.classList.remove("active");
+      header.classList.remove("active");
 
         
     });
@@ -33,6 +67,7 @@ function menu() {
       nav2.classList.remove("active");
       blend.classList.remove("active");
       body.classList.remove("active");
+      header.classList.remove("active");
   
     })
     
@@ -86,30 +121,6 @@ angleDown3.addEventListener("click", () => {
 
 
 
-  function scroll(){
-    const header = document.querySelector("header");
-    let previewPosition = 0;
-    document.addEventListener("scroll", ()=>{
-      console.log('scroll');
-
-      let scrollTop = window.scrollY || document.documentElement.scrollTop ;
-      if(scrollTop > previewPosition){
-        header.style.top = "-100px";
-     
-
-      }else{
-        header.style.top = "0";
-      
-      }
-
-    previewPosition = scrollTop;
-
-    
-      
-
-    })
-  }
-  scroll();
 
 
      

@@ -44,7 +44,7 @@ body.active{
     overflow-x: hidden;
 }
 
-header  {
+header   {
     position: fixed;
     top: 0;
     left: 0;
@@ -55,6 +55,10 @@ header  {
     padding: 5px 0;
     z-index: 11;
     backdrop-filter: blur(5px);
+}
+
+header.active{
+    position: initial;
 }
 
 
@@ -107,7 +111,7 @@ header .menu {
 
 }
 
-header .menu2 {
+.nav2 .menu2 {
     display: none;
 }
 
@@ -192,11 +196,11 @@ header .menu.active::after {
 
 }
 
-header .blend {
+.blend {
     display: none;
 }
 
-header .nav2 {
+.nav2 {
     display: none;
 }
 
@@ -528,11 +532,12 @@ main .content .leftBlock{
 
 }
 main .content .rightBlock{
-    background-color: violet;
+    background-color: var(--rouge);
     width: 100%;
     max-width: 30%;
     height: 100vh;
     margin-left: 25px;
+  
 }
 
 main .content .gallery{
@@ -665,6 +670,7 @@ main .content .galleryContent button i{
     main .content .rightBlock{
         max-width: 100%;
         margin-left: 0;
+        margin-top: 75px;
     }
 }
 @media (max-width:990px) {
@@ -680,7 +686,7 @@ main .content .galleryContent button i{
     }
    
 
-    header .menu2 {
+    .nav2 .menu2 {
         display: block;
         height: 25px;
         width: 25px;
@@ -699,7 +705,7 @@ main .content .galleryContent button i{
 
     }
 
-    header .menu2 .bar {
+    .nav2 .menu2 .bar {
         width: 100%;
         height: 3px;
         background-color: white;
@@ -712,7 +718,7 @@ main .content .galleryContent button i{
 
     }
 
-    header .menu2 .bar {
+    .nav2 .menu2 .bar {
         width: 100%;
         height: 3px;
         background-color: white;
@@ -725,15 +731,15 @@ main .content .galleryContent button i{
         
     }
    
-    header .menu2:active{
+    .nav2 .menu2:active{
         
         transition: 0.3s ease;
         transform: rotate(45deg);
         
     }
 
-    header .menu2:before,
-    header .menu2:after {
+    .nav2 .menu2:before,
+    .nav2 .menu2:after {
 
         content: "";
         width: 100%;
@@ -749,8 +755,8 @@ main .content .galleryContent button i{
 
     }
 
-    header .menu2:before,
-    header .menu2:after {
+    .nav2 .menu2:before,
+    .nav2 .menu2:after {
 
         content: "";
         width: 70%;
@@ -768,7 +774,7 @@ main .content .galleryContent button i{
     }
 
 
-    header .menu2::before {
+    .nav2 .menu2::before {
         transform: rotate(-45deg) translate(-5px, -3px);
         transition-property: transform;
         transition-timing-function: ease;
@@ -777,7 +783,7 @@ main .content .galleryContent button i{
 
     }
 
-    header .menu2::after {
+    .nav2 .menu2::after {
         transform: rotate(45deg) translate(-5px, 3px);
         transition-property: transform;
         transition-timing-function: ease;
@@ -785,11 +791,11 @@ main .content .galleryContent button i{
 
     }
 
-    header .blend {
+    .blend {
        display: none;
 
     }
-    header .blend.active {
+    .blend.active {
         display: block;
         position: fixed;
         width: 100%;
@@ -801,13 +807,13 @@ main .content .galleryContent button i{
 
     }
 
-    header .searchBar2 {
+    .nav2 .searchBar2 {
         margin: 50px 0;
         position: relative;
     
     }
     
-    header .searchBar2 i {
+    .nav2 .searchBar2 i {
         color: white;
         position: absolute;
         top: 25%;
@@ -816,7 +822,7 @@ main .content .galleryContent button i{
     
     }
     
-    header .searchBar2 input {
+    .nav2 .searchBar2 input {
         padding: 5px;
         background-color: transparent;
         border: 1px solid white;
@@ -828,11 +834,11 @@ main .content .galleryContent button i{
     
     }
     
-    header .searchBar2 input:focus {
+    .nav2 .searchBar2 input:focus {
         outline: none;
     }
 
-    header .nav2.active {
+    .nav2.active {
         transform: translateX(0);
         opacity: 1;
       transition: 0.4s cubic-bezier(.17,.84,.44,1);
@@ -841,7 +847,7 @@ main .content .galleryContent button i{
        
         
     }
-    header .nav2 {
+    .nav2 {
         display: block;
         position: fixed;
         background: var(--rosange2);
@@ -851,7 +857,7 @@ main .content .galleryContent button i{
         top: 0;
         right: 0;
         padding-top: 30px !important;
-        z-index: 2;
+        z-index: 1111;
         padding: 20px;
         transform: translateX(500px);
         opacity: 1;
@@ -861,25 +867,26 @@ main .content .galleryContent button i{
   
     }
 
-    header .nav2::-webkit-scrollbar{
-      /* width: 0; */
+    .nav2::-webkit-scrollbar{
+      width: 0;
      
     }
 
-    header .nav2 .logo2{
+    .nav2 .logo2{
        margin-top: 50px;
     }
-    header .nav2 .logo2 img{
-        height: 65px;
+    .nav2 .logo2 img{
+        height: 55px;
        
     }
 
-    header .nav2 li {
+    .nav2 li {
         border-bottom: 1px solid white;
         padding: 5px 0;
     }
 
-    header .nav2 a {
+  
+    .nav2  a {
         color: white;
         text-decoration: none;
         text-transform: uppercase;
@@ -890,10 +897,10 @@ main .content .galleryContent button i{
     }
 
 
-    header .nav2 .Nav2submenu{
+    .nav2 .Nav2submenu{
        height: auto;
     }
-    header .nav2 .Nav2submenu1 {
+    .nav2 .Nav2submenu1 {
         overflow-y: hidden;
         height: 0;
         transition: 0.3s ease;
@@ -905,14 +912,14 @@ main .content .galleryContent button i{
 
     }
 
-    header .nav2 .Nav2submenu1.active {
+    .nav2 .Nav2submenu1.active {
         height:36px;
         transition: 0.3s ease;
         transition-property: height;
 
 
     }
-    header .nav2 .Nav2submenu2 {
+    .nav2 .Nav2submenu2 {
         overflow-y: hidden;
         height: 0;
         transition: 0.3s ease;
@@ -924,7 +931,7 @@ main .content .galleryContent button i{
 
     }
 
-    header .nav2 .Nav2submenu2.active {
+    .nav2 .Nav2submenu2.active {
         height:37px;
         transition: 0.3s ease;
         transition-property: height;
@@ -940,7 +947,7 @@ header #list4{
 
 
 
-header .nav2 .Nav2submenu1-1.active {
+.nav2 .Nav2submenu1-1.active {
     overflow-y: hidden;
     height: 0;
     transition: 0.3s ease;
@@ -950,7 +957,7 @@ header .nav2 .Nav2submenu1-1.active {
 
 
 }
-header .nav2 .Nav2submenu1-1 {
+.nav2 .Nav2submenu1-1 {
     overflow-y: hidden;
     height: 0;
     transition: 0.3s ease;
@@ -960,7 +967,7 @@ header .nav2 .Nav2submenu1-1 {
 
 }
 
-header .nav2 .Nav2submenu1-1.active2 {
+.nav2 .Nav2submenu1-1.active2 {
     height: 146px;
     overflow-y: hidden;
     transition: 0.3s ease;
@@ -970,7 +977,7 @@ header .nav2 .Nav2submenu1-1.active2 {
 }
 
 
-header .nav2 .Nav2submenu1-1 li {
+.nav2 .Nav2submenu1-1 li {
     padding-left: 20px;
 
 }
@@ -978,7 +985,7 @@ header .nav2 .Nav2submenu1-1 li {
 
 
 
-header .nav2 .Nav2submenu1-2.active {
+.nav2 .Nav2submenu1-2.active {
     height: 0;
     overflow-y: hidden;
     transition: 0.3s ease;
@@ -987,7 +994,7 @@ header .nav2 .Nav2submenu1-2.active {
 
 
 }
-header .nav2 .Nav2submenu1-2 {
+.nav2 .Nav2submenu1-2 {
     height: 0;
     overflow-y: hidden;
     transition: 0.3s ease;
@@ -997,7 +1004,7 @@ header .nav2 .Nav2submenu1-2 {
 
 }
 
-header .nav2 .Nav2submenu1-2.active3 {
+.nav2 .Nav2submenu1-2.active3 {
     height: 73px;
     overflow-y: hidden;
     transition: 0.3s ease;
@@ -1008,7 +1015,7 @@ header .nav2 .Nav2submenu1-2.active3 {
 
 
 
-header .nav2 .Nav2submenu1-2 li {
+.nav2 .Nav2submenu1-2 li {
     padding-left: 20px;
 
 }
@@ -1016,9 +1023,9 @@ header .nav2 .Nav2submenu1-2 li {
 
 
 
-header .nav2 #angleDown1,
-header .nav2 #angleDown2,
-header .nav2 #angleDown3 {
+.nav2 #angleDown1,
+.nav2 #angleDown2,
+.nav2 #angleDown3 {
     position: absolute;
     right: 0;
     margin-right: 20px;
@@ -1029,12 +1036,12 @@ header .nav2 #angleDown3 {
     transition-property: transform;
 }
 
-header .nav2 #angleDown2,
-header .nav2 #angleDown3 {
+.nav2 #angleDown2,
+.nav2 #angleDown3 {
     visibility: hidden;
 }
 
-header .nav2 #angleDown1.active {
+.nav2 #angleDown1.active {
     transform: rotate(-180deg);
     transition: 0.15s ease;
     transition-property: transform;
@@ -1042,13 +1049,13 @@ header .nav2 #angleDown1.active {
 }
 
 
-header .nav2 #angleDown2.active,
-header .nav2 #angleDown3.active {
+.nav2 #angleDown2.active,
+.nav2 #angleDown3.active {
     visibility: visible;
 }
 
-header .nav2 #angleDown2.active2,
-header .nav2 #angleDown3.active3 {
+.nav2 #angleDown2.active2,
+.nav2 #angleDown3.active3 {
     transform: rotate(-180deg);
     transition: 0.15s ease;
     transition-property: transform;
@@ -1070,7 +1077,7 @@ main .content .leftBlock .head h1{
 
 @media (max-width:784px) {
 
-    header .nav2{
+    .nav2{
         max-width: 40%;
     }
 }
@@ -1080,14 +1087,14 @@ main .content .leftBlock .head h1{
 @media (max-width:640px) {}
 
 @media (max-width:600px) {
-    header .nav2{
+    .nav2{
         max-width: 50%;
     }
 }
 
 /* xm */
 @media (max-width:475px) {
-    header .nav2{
+    .nav2{
         max-width: 100%;
         text-align: center;
     }
