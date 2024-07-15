@@ -682,7 +682,6 @@ main .content .rightBlock .box-2 .img{
 }
 main .content .rightBlock .box-2 img{
     width: 100%;
-    max-width: 350px;
     height: 100%;
     border-radius: 30px;
     object-fit: cover;
