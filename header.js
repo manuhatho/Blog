@@ -80,21 +80,21 @@ const angleDown1 = document.getElementById("angleDown1");
 const angleDown2 = document.getElementById("angleDown2");
 const angleDown3 = document.getElementById("angleDown3");
 const Nav2submenu1 = document.querySelector(".Nav2submenu1");
-const Nav2submenu2= document.querySelector(".Nav2submenu2");
+// const Nav2submenu2= document.querySelector(".Nav2submenu2");
 const Nav2submenu1Drop = document.querySelector(".Nav2submenu1-1");
-const Nav2submenu2Drop = document.querySelector(".Nav2submenu1-2");
+// const Nav2submenu2Drop = document.querySelector(".Nav2submenu1-2");
 
 
 angleDown1.addEventListener("click", () => {
    angleDown1.classList.toggle("active");
    angleDown2.classList.toggle("active");
-   angleDown3.classList.toggle("active");
+  //  angleDown3.classList.toggle("active");
    Nav2submenu1.classList.toggle("active");
-   Nav2submenu2.classList.toggle("active");
+  //  Nav2submenu2.classList.toggle("active");
    angleDown2.classList.remove("active2");
-   angleDown3.classList.remove("active3");
+  //  angleDown3.classList.remove("active3");
     Nav2submenu1Drop.classList.remove("active2");
-    Nav2submenu2Drop.classList.remove("active3");
+    // Nav2submenu2Drop.classList.remove("active3");
    
 
    
@@ -112,7 +112,7 @@ angleDown2.addEventListener("click", () => {
 
 angleDown3.addEventListener("click", () => {
    angleDown3.classList.toggle("active3");
-   Nav2submenu2Drop.classList.toggle("active3");
+  //  Nav2submenu2Drop.classList.toggle("active3");
 
    
    

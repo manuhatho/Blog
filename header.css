@@ -1066,7 +1066,7 @@ header #list4{
 }
 
 .nav2 .Nav2submenu1-1.active2 {
-    height: 146px;
+    height: 110px;
     overflow-y: hidden;
     transition: 0.3s ease;
     transition-property: height;
