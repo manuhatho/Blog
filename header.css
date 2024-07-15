@@ -678,6 +678,7 @@ main .content .rightBlock .box-2 .img{
     height: 500px;
     padding: 20px;
     border-radius: 30px;
+    text-align: center;
 }
 main .content .rightBlock .box-2 img{
     width: 100%;
