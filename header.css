@@ -460,6 +460,7 @@ header .openList:hover .submenu li {
 
 
 
+
 header .submenu1-1,
 header .submenu1-2 {
     display: none;
@@ -1051,6 +1052,10 @@ header #list4{
 }
 
 
+.nav2  #list4:last-of-type{
+    border-bottom: none;
+   
+}
 
 
 .nav2 .Nav2submenu1-1.active {
