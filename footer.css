@@ -303,7 +303,21 @@ footer.reveal{
         body{
             margin: 0;
         }
+        
+        
+.footerContent h3 {
+    font-size: 15px;
+}
     }
+    .copyright {
+        font-size: 12px;
+    }
+
+    .footerContent h3::before,
+.footerContent h3::after {
+    height: 2px;
+    
+}
 
     /* xm */
     @media (max-width:475px) {
