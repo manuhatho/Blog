@@ -10,8 +10,18 @@ main {
     margin: 0 auto;
     padding-top: 30px;
     margin-top: 75px;
+    position: relative;
    
     
+}
+
+main .hand{
+    height: 150px;
+    position: absolute;
+    bottom: -12px;
+    left: 40%;
+    right: 50%;
+
 }
 
 main .content {
@@ -264,6 +274,10 @@ main .content .rightBlock .box-3 p a {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    main .hand{
+        display: none;
     }
 
    
