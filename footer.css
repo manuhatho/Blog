@@ -33,13 +33,17 @@ footer {
     border-radius: 100px 0 0 0;
     position: fixed;
     bottom: -150px;
+    /* bottom: 0; */
     opacity: 0;
+    /* transform: translateY(100%); */
+    /* transition: translate 0.3s ease, translate 0.3s ease; */
     transition: bottom 0.3s ease, opacity 0.3s ease;
     
 }
 footer.reveal{
     bottom: 0;
     opacity: 1;
+    /* transform: translateY(0); */
     transition: bottom 0.3s ease, opacity 0.3s ease;
 }
 
