@@ -17,6 +17,10 @@
     src: url(./Assets/Fonts/Apple_Berry.otf);
 }
 
+body{
+    padding-bottom: 300px;
+}
+
 footer {
     width: 100%;
     background: var(--rosange);
@@ -27,6 +31,16 @@ footer {
     padding: 20px;
     margin-top: 50px;
     border-radius: 100px 0 0 0;
+    position: fixed;
+    bottom: -150px;
+    opacity: 0;
+    transition: bottom 0.3s ease, opacity 0.3s ease;
+    
+}
+footer.reveal{
+    bottom: 0;
+    opacity: 1;
+    transition: bottom 0.3s ease, opacity 0.3s ease;
 }
 
 
