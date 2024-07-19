@@ -1,0 +1,274 @@
+:root {
+    --vert: #1a6b69;
+    --vertB: #217776;
+    --blue: #ffffff;
+    --rosange: linear-gradient(to right, white 0%, #fca491aa 0%, #f57093a0 40%, #cda0ca80 100%);
+    --rosange2: linear-gradient(to top, white 0%, #fca491aa 0%, #f57093a0 40%, #cda0ca80 100%);
+    --beige: #fca491;
+    --violet: #cda0ca;
+    --rouge: #f57093;
+
+}
+
+
+
+@font-face {
+    font-family: "apple";
+    src: url(./Assets/Fonts/Apple_Berry.otf);
+}
+
+footer {
+    width: 100%;
+    background: var(--rosange);
+    font-family: poppins;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+
+.footerContent {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.topLogo,
+.middle,
+.bottom {
+    margin: 30px 0;
+}
+
+.bottom {
+    margin-bottom: 10px;
+}
+
+.topLogo img {
+    height: 50px;
+}
+
+.middle {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    
+}
+
+
+.middle li a {
+    text-decoration: none;
+    color: var(--vertB);
+    text-transform: capitalize;
+}
+.box1,
+.box2,
+.box3{
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+.box1 li {
+    font-family: "apple";
+    font-size: 22px;
+}
+
+.box2 input {
+    padding: 8px;
+    background-color: transparent;
+    border: 2px solid var(--vertB);
+    color: var(--vert);
+    margin-bottom: 5px;
+
+}
+
+.box2 input:focus {
+    outline: none;
+    box-shadow: 1px 1px 3px 3px var(--vert);
+}
+
+.box2 button {
+    padding: 8px;
+    background-color: var(--vertB);
+    border: 2px solid var(--vertB);
+    color: white;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin-bottom: 5px;
+
+}
+
+.box2 button:hover {
+    transition: all 0.15s ease;
+    border: 2px solid white;
+    background-color: transparent;
+    color: var(--vertB);
+}
+
+.box3 a {
+    text-decoration: none;
+
+}
+
+.box3 i {
+    color: var(--vertB);
+    scale: 1.2;
+    margin-right: 8px;
+}
+
+.box4 i {
+    color: var(--vertB);
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+
+.box4 p {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'apple';
+    font-size: 22px;
+    color: var(--vertB);
+}
+
+.bottom {
+    text-align: center;
+}
+
+.bottom fieldset {
+    border-top: 1px solid var(--vertB);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding-top: 30px;
+}
+.bottom fieldset p{
+    font-weight: 500;
+    color: var(--vert);
+    font-family: poppins;
+}
+
+.footerContent h3 {
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    max-width: fit-content;
+    position: relative;
+    margin-bottom: 10px;
+    transition: color 0.15s ease;
+    user-select: none;
+}
+
+.footerContent h3::before {
+    content: "";
+    position: absolute;
+    width: 45%;
+    height: 3px;
+    right: 0;
+    top: 0;
+    border-radius: 5px;
+    background-color: var(--blue);
+    display: block;
+    transition: all 0.15s ease;
+
+}
+
+.footerContent h3::after {
+    content: "";
+    position: absolute;
+    width: 45%;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    border-radius: 5px;
+    background-color: var(--blue);
+    display: block;
+    transition: all 0.15s ease;
+
+}
+
+.footerContent h3:hover {
+    color: var(--vertB);
+    transition: color 0.15s ease;
+}
+
+.footerContent h3:hover::before,
+.footerContent h3:hover::after {
+    width: 100%;
+    background-color: var(--vertB);
+    transition: all 0.15s ease;
+
+
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+/*------------------------- Responsive footer----------------------------- */
+
+
+/* 2xl */
+@media (max-width:1546px) {}
+
+/* xl */
+@media (max-width:1280px) {}
+
+/* lg */
+@media (max-width:1024px) {}
+
+@media (max-width:902px) {
+    
+    .middle{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:819px) {
+    .footerContent h3::before,
+.footerContent h3::after {
+    width: 100%;
+    background-color: var(--vertB);
+
+}
+.footerContent h3{
+    color: var(--vertB);
+}
+.middle li a {
+    color: white;
+}
+.box2 input{
+    border-color: white;
+}
+.box2 button{
+    background-color: white;
+    color: var(--vertB);
+    border-color: white;
+}
+.box3 i{
+    color: white;
+}
+.box4 i,
+.box4 p{
+    color: white;
+}
+}
+
+    /* md */
+
+    @media (max-width:768px) {}
+
+    /* sm */
+    @media (max-width:640px) {}
+
+    /* xm */
+    @media (max-width:475px) {
+
+    }
+
+    @media (max-width:374px) {
+
+    }

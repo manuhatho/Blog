@@ -85,7 +85,7 @@ header .logo {
 
 header .logo img {
     height: 50px;
-    margin-right: 400px;
+ 
 
 
 }
@@ -499,230 +499,10 @@ header .openList .submenu2:hover .submenu1-2 a {
     text-transform: capitalize;
 }
 
-main{
-   
-    width: 100%;
-    max-width: 95%;
-    margin: 0 auto;
-    padding-top: 30px;
-    margin-top: 75px;
-}
-
-main .content {
-    display: flex;
-    padding-bottom: 100px;
-    
-}
-main .content .leftBlock .head h1{
-    font-weight: 400;
-    font-size: 1.6rem;
-    color: var(--beige);
-}
-main .content .leftBlock .head{
-    text-align: center;
-    font-family: poppins;
-    border: 1px solid var(--vert);
-    padding: 15px;
-    border-radius: 100px;
-}
-main .content .leftBlock{
-    width: 100%;
-    max-width: 70%;
-    margin-right: 25px;
-    margin: auto 0;
-
-}
-main .content .rightBlock{
-    font-family: poppins;
-    width: 100%;
-    max-width: 30%;
-    height: 100vh;
-    margin-left: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-
-  
-}
-
-main .content .gallery{
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 10px;
-    justify-items: center;
-   
-    
-
-}
-main .content .galleryContent{
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    border: 1px solid var(--vert);
-    border-radius:30px ;
-    margin-bottom: 30px;
-    
-    
-}
-main .content .galleryContent .img{
-    width: 100%;
-    height: 350px;
-}
-main .content .galleryContent img{
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
-    object-fit: cover;
-
-}
-
-main .content .galleryContent h4,
-main .content .galleryContent p,
-main .content .galleryContent button{
-    margin-top: 20px;
-    padding: 0 20px;
-    text-align: center;
-}
-main .content .galleryContent button{
-    float: right;
-    margin: 20px;
-    
-}
-main .content .galleryContent h4{
-    font-family: poppins;
-    font-weight: 500;
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--rouge);
-
-}
-main .content .galleryContent p{
-    font-family: "apple";
-    letter-spacing: 1px;
-    font-size: 40px;
-    color: var(--violet);
-}
-main .content .galleryContent button{
-    background-color: var(--vertB);
-    border: 1px solid var(--vert);
-    padding: 8px 15px;
-    color: white;
-    border-radius: 30px;
-    text-transform: uppercase;
-    font-family: poppins;
-    font-weight: 500;
-    cursor:pointer;
-    transition: 0.15s ease;
-}
-main .content .galleryContent button:hover{
-    background-color: transparent;
-    color: var(--violet);
-    border-color: var(--vert);
-    scale: 1.1;
-    transition: 0.15s ease;
-}
-main .content .galleryContent button i{
-    color: var(--beige);
-    vertical-align: middle;
-}
-
-main .content .rightBlock .box-1{
-    width: 100%;
-    border: 1px solid var(--violet) ;
-    border-radius: 30px;
-    text-align: center;
-    padding: 20px 10px;
-}
-main .content .rightBlock .box-1 h2{
-    width: 100%;
-    max-width: 250px;
-    margin: 0 auto;
-    font-size: 1.6rem;
-    font-weight: 400;
-    border-bottom: 1px solid var(--vert);
-    padding: 10px;
-    margin-bottom: 20px;
-    color: var(--beige);
-}
-main .content .rightBlock .liste li{
-    padding: 10px;
-    border: 1px solid var(--beige);
-    border-radius: 20px;
-    margin-bottom: 15px !important;
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
-    text-transform: uppercase;
-    font-family: poppins;
-    transition: 0.15s ease;
-}
-
-main .content .rightBlock .liste li:hover{
-    transition: 0.15s ease;
-    background-color: var(--vert);
-    border:1px solid var(--vert);
-    color: var(--beige);
-
-}
-main .content .rightBlock .liste a{
-        text-decoration: none;
-        color: var(--vert);
-}
-
-main .content .rightBlock .box-2{
-    width: 100%;
-    border: 1px solid var(--violet);
-    border-radius: 30px;
-  
-}
-main .content .rightBlock .box-2 .img{
-    width: 100%;
-    height: 500px;
-    padding: 20px;
-    border-radius: 30px;
-    text-align: center;
-}
-main .content .rightBlock .box-2 img{
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
-    object-fit: cover;
-}
-
-main .content .rightBlock .box-3{
-    width: 100%;
-    border: 1px solid var(--violet);
-    border-radius: 30px;
-    text-align: center;
-    padding: 30px;
-    word-wrap: break-word;
-}
-
-main .content .rightBlock .box-3 p{
-    color: var(--beige);
-    width: fit-content;
-    margin: 0 auto;
-   
-  
-   
-}
-main .content .rightBlock .box-3 p a{
-    text-decoration: none;
-    border: 1px solid var(--beige);
-    color: var(--vert);
-    padding: 0 10px;
-    border-radius: 30px;
-    
- 
-
-}
 
 
 
-/* --------------------------RESPONSIVE Acceuil-Menu-------------------------------- */
+/* --------------------------RESPONSIVE header-------------------------------- */
 
 /* 2xl */
 @media (max-width:1546px) {}
@@ -733,53 +513,6 @@ main .content .rightBlock .box-3 p a{
 /* lg */
 @media (max-width:1024px) {}
 
-@media (max-width:1007px) {
-    main .content{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    main .content .leftBlock .head{
-        width: fit-content;
-        margin: 0 auto;
-    }
-    main .content .leftBlock .head h1{
-        font-size: 20px;
-        width:100%;
-        max-width: fit-content;
-        margin: 0 auto;
-    }
-    main .content .galleryContent .details{
-        text-align: center;
-    }
-    main .content .galleryContent button{
-        float:none;
-       
-    }
-  
-    main .content .galleryContent {
-        height: auto;
-    }
-   
-    main .content .galleryContent .img{
-        height: auto;
-    }
-    main .content .galleryContent img{
-        width: 100%;
-        height: auto ;
-        border-radius: 30px;
-        object-fit: cover;
-    
-    }
-    main .content .leftBlock{
-        max-width: 100%;
-    }
-    main .content .rightBlock{
-        max-width: 100%;
-        margin-left: 0;
-        margin-top: 75px;
-    }
-}
 @media (max-width:990px) {
     nav,
      .searchBar{
@@ -1174,9 +907,6 @@ header #list4{
 
 }
 
-main .content .leftBlock .head h1{
-    font-size: 20px;
-}
 
 }
 
@@ -1214,20 +944,5 @@ main .content .leftBlock .head h1{
 }
 @media (max-width:374px){
 
-    main .content .rightBlock .box-2 .img{
-
-        height: auto;
-    }
-    main .content .gallery{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    main .content .leftBlock .head{
-        padding: 6px;
-    }
-    main .content .leftBlock .head h1{
-        font-size: 16px;
-        
-    }
+  
 }
