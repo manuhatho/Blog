@@ -108,6 +108,7 @@ header .menu {
     cursor: pointer;
     display: none;
     position: relative;
+    right: 23px;
 
 
 }
