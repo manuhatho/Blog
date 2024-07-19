@@ -26,6 +26,7 @@ footer {
     align-items: center;
     padding: 20px;
     margin-top: 50px;
+    border-radius: 100px 0 0 0;
 }
 
 
@@ -148,11 +149,13 @@ footer {
     border-left: none;
     border-right: none;
     padding-top: 30px;
+    
 }
 .bottom fieldset p{
     font-weight: 500;
     color: var(--vert);
     font-family: poppins;
+    user-select: none;
 }
 
 .footerContent h3 {
