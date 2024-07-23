@@ -277,6 +277,7 @@ footer.reveal{
 }
 .box2 input{
     border-color: white;
+    color: var(--violetB);
 }
 .box2 button{
     background-color: white;
