@@ -86,12 +86,12 @@ footer.reveal{
 
 .middle li a {
     text-decoration: none;
-    color: var(--vert);
+    color: var(--violetB);
     text-transform: capitalize;
     transition: color 0.15s ease;
 }
 .middle li a:hover{
-    color: #439291;
+    color: var(--violet);
     transition: color 0.15s ease;
 }
 .box1,
@@ -110,7 +110,7 @@ footer.reveal{
     padding: 8px;
     background-color: transparent;
     border: 2px solid var(--violetB);
-    color: var(--vert);
+    color: var(--violetB);
     margin-bottom: 5px;
 
 }
@@ -134,9 +134,9 @@ footer.reveal{
 
 .box2 button:hover {
     transition: all 0.15s ease;
-    border: 2px solid white;
+    border: 2px solid var(--violetB);
     background-color: transparent;
-    color: var(--violetB);
+    color: white;
 }
 
 .box3 a {
@@ -145,13 +145,13 @@ footer.reveal{
 }
 
 .box3 i {
-    color: var(--vertB);
+    color: var(--violetB);
     scale: 1.2;
     margin-right: 8px;
 }
 
 .box4 i {
-    color: var(--vertB);
+    color: var(--violetB);
     display: inline-block;
     vertical-align: middle;
 
@@ -163,7 +163,7 @@ footer.reveal{
     vertical-align: middle;
     font-family: 'apple';
     font-size: 22px;
-    color: var(--vertB);
+    color: var(--violetB);
 }
 
 .bottom {
@@ -171,7 +171,7 @@ footer.reveal{
 }
 
 .bottom fieldset {
-    border-top: 1px solid var(--vertB);
+    border-top: 1px solid var(--violetB);
     border-bottom: none;
     border-left: none;
     border-right: none;
@@ -180,7 +180,7 @@ footer.reveal{
 }
 .bottom fieldset p{
     font-weight: 500;
-    color: var(--vert);
+    color: var(--violetB);
     font-family: poppins;
     user-select: none;
 }
@@ -225,14 +225,14 @@ footer.reveal{
 }
 
 .footerContent h3:hover {
-    color: var(--vertB);
+    color: var(--violetB);
     transition: color 0.15s ease;
 }
 
 .footerContent h3:hover::before,
 .footerContent h3:hover::after {
     width: 100%;
-    background-color: var(--vertB);
+    background-color: var(--violetB);
     transition: all 0.15s ease;
 
 
