@@ -50,6 +50,7 @@ main .content .leftBlock {
     max-width: 70%;
     margin-right: 25px;
     margin: auto 0;
+    
 
 }
 
@@ -74,6 +75,7 @@ main .content .gallery {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 10px;
     justify-items: center;
+   
 
 
 
@@ -83,7 +85,10 @@ main .content .galleryContent {
     width: 100%;
     max-width: 400px;
     height: auto;
-    border: 1px solid var(--vert);
+    border-top: none;
+    border-bottom: 1px solid var(--vert);
+    border-left:  1px solid var(--vert) ;
+    border-right:  1px solid var(--vert) ;
     border-radius: 30px;
     margin-bottom: 30px;
 
