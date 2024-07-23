@@ -281,6 +281,10 @@ main .content .rightBlock .box-3 p a {
         display: none;
     }
 
+    body{
+        border-radius: 0 !important;
+    }
+
    
 
     main .content .leftBlock .head {
