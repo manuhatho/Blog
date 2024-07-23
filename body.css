@@ -40,7 +40,7 @@ main .content .leftBlock .head h1 {
 main .content .leftBlock .head {
     text-align: center;
     font-family: poppins;
-    border: 1px solid var(--vert);
+    box-shadow: 0 0 5px 2px #2177763a;
     padding: 15px;
     border-radius: 100px;
 }
@@ -85,10 +85,11 @@ main .content .galleryContent {
     width: 100%;
     max-width: 400px;
     height: auto;
-    border-top: none;
+    /* border-top: none;
     border-bottom: 1px solid var(--vert);
     border-left:  1px solid var(--vert) ;
-    border-right:  1px solid var(--vert) ;
+    border-right:  1px solid var(--vert) ; */
+    box-shadow: 0 0 5px 2px #2177763a;
     border-radius: 30px;
     margin-bottom: 30px;
 
@@ -167,7 +168,7 @@ main .content .galleryContent button i {
 
 main .content .rightBlock .box-1 {
     width: 100%;
-    border: 1px solid var(--violet);
+    box-shadow: 0 0 5px 2px #cda0ca;
     border-radius: 30px;
     text-align: center;
     padding: 20px 10px;
@@ -213,7 +214,7 @@ main .content .rightBlock .liste a {
 
 main .content .rightBlock .box-2 {
     width: 100%;
-    border: 1px solid var(--violet);
+    box-shadow: 0 0 5px 2px #cda0ca;
     border-radius: 30px;
 
 }
