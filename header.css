@@ -370,14 +370,16 @@ header nav {
 header .searchBar {
     margin: 0 10px;
     position: relative;
-
+    
 }
+
 
 header .searchBar i {
     color: white;
     position: absolute;
     top: 25%;
     right: 10px;
+    cursor: pointer;
 
 }
 
@@ -393,8 +395,11 @@ header .searchBar input {
 
 }
 
+
 header .searchBar input:focus {
     outline: none;
+    box-shadow: 0 0 5px 2px #217776b1;
+    border: none;
 }
 
 header .openList {
@@ -433,7 +438,7 @@ header .openList:hover .submenu {
     /* text-align: center; */
     backdrop-filter: blur(5px);
     border: 1px solid black;
-    top: 44px;
+    top: 40px;
     z-index: 1;
 
 
@@ -670,6 +675,7 @@ header .openList .submenu2:hover .submenu1-2 a {
     
     }
     
+
     .nav2 .searchBar2 input {
         padding: 5px;
         background-color: transparent;
@@ -684,8 +690,10 @@ header .openList .submenu2:hover .submenu1-2 a {
     
     .nav2 .searchBar2 input:focus {
         outline: none;
+        box-shadow: 0 0 5px 2px #217776b1;
+        border: none;
     }
-
+  
     .nav2.active {
         transform: translateX(0);
         opacity: 1;

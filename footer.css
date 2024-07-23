@@ -115,7 +115,8 @@ footer.reveal{
 
 .box2 input:focus {
     outline: none;
-    box-shadow: 1px 1px 3px 3px var(--vert);
+    box-shadow: 0 0 5px 2px var(--vert);
+    border: none;
 }
 
 .box2 button {
