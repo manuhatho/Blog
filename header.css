@@ -28,6 +28,7 @@
 
 html {
     scroll-behavior: smooth;
+  
     
 }
 
@@ -42,9 +43,10 @@ body.active{
     
 }
 
-.preventXoverflow {
+/* .preventXoverflow {
     overflow-x: hidden;
-}
+
+} */
 
 header   {
     position: fixed;
@@ -87,7 +89,7 @@ header .logo {
 }
 
 header .logo img {
-    height: 50px;
+    height: 40px;
  
 
 
