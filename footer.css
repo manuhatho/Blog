@@ -7,6 +7,7 @@
     --beige: #fca491;
     --violet: #cda0ca;
     --rouge: #f57093;
+    --violetB : #8b6b89;
 
 }
 
@@ -27,7 +28,8 @@ body{
 
 footer {
     width: 100%;
-    background: var(--rosange);
+    /* background: var(--rosange); */
+    background-color: var(--beige);
     font-family: poppins;
     display: flex;
     justify-content: center;
@@ -107,7 +109,7 @@ footer.reveal{
 .box2 input {
     padding: 8px;
     background-color: transparent;
-    border: 2px solid var(--vertB);
+    border: 2px solid var(--violetB);
     color: var(--vert);
     margin-bottom: 5px;
 
@@ -115,14 +117,14 @@ footer.reveal{
 
 .box2 input:focus {
     outline: none;
-    box-shadow: 0 0 5px 2px var(--vert);
+    box-shadow: 0 0 5px 2px var(--violetB);
     border: none;
 }
 
 .box2 button {
     padding: 8px;
-    background-color: var(--vertB);
-    border: 2px solid var(--vertB);
+    background-color: var(--violetB);
+    border: 2px solid var(--violetB);
     color: white;
     cursor: pointer;
     transition: all 0.15s ease;
@@ -134,7 +136,7 @@ footer.reveal{
     transition: all 0.15s ease;
     border: 2px solid white;
     background-color: transparent;
-    color: var(--vertB);
+    color: var(--violetB);
 }
 
 .box3 a {
