@@ -266,11 +266,11 @@ footer.reveal{
     .footerContent h3::before,
 .footerContent h3::after {
     width: 100%;
-    background-color: var(--vertB);
+    background-color: var(--violetB);
 
 }
 .footerContent h3{
-    color: var(--vertB);
+    color: var(--violetB);
 }
 .middle li a {
     color: white;
@@ -280,7 +280,7 @@ footer.reveal{
 }
 .box2 button{
     background-color: white;
-    color: var(--vertB);
+    color: var(--violetB);
     border-color: white;
 }
 .box3 i{
