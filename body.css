@@ -159,7 +159,7 @@ main .content .galleryContent button {
 main .content .galleryContent button:hover {
     background-color: transparent;
     color: var(--violet);
-    box-shadow : 0 0 5px 2px #cda0cak;
+    box-shadow : 0 0 5px 2px #cda0ca;
     scale: 1.1;
     border: none;
     transition: 0.15s ease;
