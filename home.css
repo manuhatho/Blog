@@ -330,7 +330,7 @@ main{
  /* sm */
  @media (max-width:641px) {
     .hero .hero-section .right h1{
-        font-size: 25px;
+        font-size: 30px;
     }
     .hero .hero-section .right{
         text-align: justify;
