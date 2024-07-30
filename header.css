@@ -1,8 +1,8 @@
 :root {
     /* --vert: #1a6b69; */
-    --vert: rgb(243, 170, 125) !important;
+    --vert: rgb(243, 170, 125) ;
     /* --vertB: #217776; */
-    --vertB: rgb(238, 144, 85) !important;
+    --vertB: rgb(238, 144, 85) ;
     --blue:#ffffff;
     --rosange: linear-gradient(to right, white 0%,#fca491aa 0%, #f57093a0 40%, #cda0ca80 100%);
     --rosange2: linear-gradient(to top, white 0%,#fca491aa 0%, #f57093a0 40%, #cda0ca80 100%);
