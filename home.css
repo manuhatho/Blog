@@ -245,7 +245,7 @@ main{
 }
 
 .flotter-animation {
-    animation: flotter 2s ease-in-out infinite alternate;
+    animation: flotter 4s ease-in-out infinite alternate;
     /* Animation du flottement */
 }
 
