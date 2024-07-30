@@ -1,0 +1,519 @@
+:root {
+    --vert: #1a6b69;
+    --vertB: #217776;
+    --blue: #ffffff;
+    --rosange: linear-gradient(to right, white 0%, #fca491aa 0%, #f57093a0 40%, #cda0ca80 100%);
+    --rosange2: linear-gradient(to top, white 0%, #fca491aa 0%, #f57093a0 40%, #cda0ca80 100%);
+    --beige: #fca491;
+    --violet: #cda0ca;
+    --rouge: #f57093;
+    --violetB: #8b6b89;
+
+}
+
+
+
+@font-face {
+    font-family: "apple";
+    src: url(./Assets/Fonts/Apple_Berry.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+
+}
+
+body {
+    overflow-x: hidden;
+
+
+
+
+
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.hero.active {
+    position: static !important;
+}
+
+.hero .hero-section {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: top 0.4s ease;
+    z-index: 1;
+
+}
+
+.hero {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url(heroBackgrounD.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.blendB {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.532);
+  
+    z-index: 1;
+}
+.height{
+    height: 110vh;
+}
+
+
+
+.initial {
+    position: static !important;
+    transition: position 0.4s ease;
+    padding: 30px;
+
+}
+
+.visibility {
+    visibility: hidden;
+}
+
+.hero .hero-section .content {
+   padding: 40px 0;
+   padding-left: 30px;
+    width: 100%;
+    display: flex;
+   
+    justify-content: space-evenly;
+    align-items: center;
+
+
+
+}
+
+.hero .hero-section .left {
+    width: 800px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    position: relative;
+
+
+}
+
+.hero .hero-section .left .blendL {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 3, 37, 0.303);
+    border-radius: 30px;
+    z-index: 1;
+}
+
+.hero .hero-section .left::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    left: -17px;
+    top: 4px;
+    height: 50px;
+    border: 5px solid var(--violetB);
+    border-style: dotted;
+    border-top: none;
+    border-radius: 30px;
+    border-right: none;
+    border-bottom: none;
+    display: block;
+    transform: rotate(45deg) translate(-5px, 10px);
+
+}
+
+.hero .hero-section .left::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    right: -17px;
+    bottom: -10px;
+    height: 50px;
+    border: 5px solid var(--violetB);
+    border-style: dotted;
+    border-top: none;
+    border-radius: 30px;
+    border-right: none;
+    border-bottom: none;
+    display: block;
+    transform: rotate(190deg) translate(-5px, 10px);
+
+
+}
+
+.hero .hero-section .left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+
+
+}
+
+.hero .hero-section .right {
+    font-family: poppins;
+
+    margin-left: 30px;
+}
+
+.hero .hero-section .right h1 {
+    text-wrap: wrap;
+    font-weight: 400;
+    color: var(--violet);
+   
+}
+
+.hero .hero-section .right .font-1 {
+    font-family: "apple";
+    font-size: 2.6rem;
+    color: var(--rouge);
+
+}
+
+.hero .hero-section .right .font-2 {
+    font-family: "apple";
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    color: var(--violet);
+
+}
+
+.hero .hero-section .right p {
+    font-weight: 600;
+    color: var(--rouge);
+}
+
+
+main{
+    padding-top: 100px;
+}
+
+
+.footerContent {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.topLogo,
+.middle,
+.bottom {
+    margin: 30px 0;
+}
+
+.bottom {
+    margin-bottom: 10px;
+}
+
+.topLogo img {
+    height: 50px;
+}
+
+.middle {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+}
+
+
+.middle li a {
+    text-decoration: none;
+    color: var(--violetB);
+    text-transform: capitalize;
+    transition: color 0.15s ease;
+}
+
+.middle li a:hover {
+    color: var(--violet);
+    transition: color 0.15s ease;
+}
+
+.box1,
+.box2,
+.box3 {
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+.box1 li {
+    font-family: "apple";
+    font-size: 22px;
+}
+
+.box2 input {
+    padding: 8px;
+    background-color: transparent;
+    border: 2px solid var(--violetB);
+    color: var(--violetB);
+    margin-bottom: 5px;
+
+}
+
+.box2 input:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px var(--violetB);
+    border: none;
+}
+
+.box2 button {
+    padding: 8px;
+    background-color: var(--violetB);
+    border: 2px solid var(--violetB);
+    color: white;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin-bottom: 5px;
+
+}
+
+.box2 button:hover {
+    transition: all 0.15s ease;
+    border: 2px solid var(--violetB);
+    background-color: transparent;
+    color: white;
+}
+
+.box3 a {
+    text-decoration: none;
+
+}
+
+.box3 i {
+    color: var(--violetB);
+    scale: 1.2;
+    margin-right: 8px;
+}
+
+.box4 i {
+    color: var(--violetB);
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+
+.box4 p {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'apple';
+    font-size: 22px;
+    color: var(--violetB);
+}
+
+.bottom {
+    text-align: center;
+}
+
+.bottom fieldset {
+    border-top: 1px solid var(--violetB);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding-top: 30px;
+
+}
+
+.bottom fieldset p {
+    font-weight: 500;
+    color: var(--violetB);
+    font-family: poppins;
+    user-select: none;
+}
+
+.footerContent h3 {
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    max-width: fit-content;
+    position: relative;
+    margin-bottom: 10px;
+    transition: color 0.15s ease;
+    user-select: none;
+}
+
+.footerContent h3::before {
+    content: "";
+    position: absolute;
+    width: 45%;
+    height: 3px;
+    right: 0;
+    top: 0;
+    border-radius: 5px;
+    background-color: var(--blue);
+    display: block;
+    transition: all 0.15s ease;
+
+}
+
+.footerContent h3::after {
+    content: "";
+    position: absolute;
+    width: 45%;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    border-radius: 5px;
+    background-color: var(--blue);
+    display: block;
+    transition: all 0.15s ease;
+
+}
+
+.footerContent h3:hover {
+    color: var(--violetB);
+    transition: color 0.15s ease;
+}
+
+.footerContent h3:hover::before,
+.footerContent h3:hover::after {
+    width: 100%;
+    background-color: var(--violetB);
+    transition: all 0.15s ease;
+
+
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+
+@keyframes flotter {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+        /* Effet de flottement vers le haut */
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.flotter-animation {
+    animation: flotter 2s ease-in-out infinite alternate;
+    /* Animation du flottement */
+}
+
+.hero .scrolL-down {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: -25px;
+    left: 10%;
+    right: 0;
+    margin: 0 auto;
+    z-index: 111;
+    color: var(--vertB);
+    scale: 2.5;
+}
+
+/* -------------------------------------Responsive Body------------------------------------------- */
+
+/* 2xl */
+@media (max-width:1546px) {}
+
+/* xl */
+@media (max-width:1280px) {}
+
+/* lg */
+@media (max-width:1024px) {}
+
+@media (max-width:1005px) {
+    .hero .hero-section .content{
+        display: flex;
+        flex-direction: column-reverse; 
+        align-items: center;
+        padding-top: 0;
+        padding-left: 0;
+        text-align: center;
+        width: 100%;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    .height{
+        height: 70vh;
+    }
+
+
+    .hero .hero-section .right{
+        margin-left: 0;
+    }
+    .hero .hero-section .left{
+        
+        margin-top: 50px;
+        width: 100%;
+        max-width: 600px;
+        height: auto ;
+    }
+    .hero .hero-section .blendL{
+        width: 100%;
+        height: auto;
+    }
+    .hero .hero-section .left img{
+        width: 100%;
+        height: auto ;
+    }
+    .hero .scrolL-down {
+        bottom: 0;
+       left: 95px;
+       
+    }
+    .hero .blendB{
+        
+    background-color: rgba(0, 0, 0, 0.679);
+ 
+ 
+    }
+ 
+}
+
+/* md */
+@media (max-width:768px) {}
+
+ /* sm */
+ @media (max-width:641px) {
+    .hero .hero-section .right h1{
+        font-size: 25px;
+    }
+    .hero .hero-section .right{
+        text-align: justify;
+    }
+ }
+
+   /* xm */
+   @media (max-width:475px) {
+
+   }
+

@@ -1,6 +1,8 @@
 :root {
-    --vert: #1a6b69;
-    --vertB: #217776;
+    /* --vert: #1a6b69; */
+    --vert: rgb(243, 170, 125) !important;
+    /* --vertB: #217776; */
+    --vertB: rgb(238, 144, 85) !important;
     --blue:#ffffff;
     --rosange: linear-gradient(to right, white 0%,#fca491aa 0%, #f57093a0 40%, #cda0ca80 100%);
     --rosange2: linear-gradient(to top, white 0%,#fca491aa 0%, #f57093a0 40%, #cda0ca80 100%);
@@ -351,6 +353,18 @@ header .nav #list4:after{
    display: block;
 }
 
+header nav .submenu1 li{
+    border-bottom: none !important;
+   
+}
+header nav .submenu1-1 li{
+    border-bottom: 1px solid white !important;
+    
+    
+}
+header nav .submenu1-1 li:last-of-type{
+    border-bottom: none !important;
+}
 header nav .submenu1 li:hover,
 header nav .submenu2 li:hover{
     background-color: var(--vertB);
@@ -438,7 +452,7 @@ header .openList:hover .submenu {
     /* text-align: center; */
     backdrop-filter: blur(5px);
     border: 1px solid black;
-    top: 40px;
+    top: 38px;
     z-index: 1;
 
 

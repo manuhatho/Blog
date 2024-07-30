@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <div class="content">
+            <div class="logo">
+                <img src="./logo.png" alt="">
+            </div>
+
+            <nav>
+                <ul class="nav">
+                    <li id="list1"><a id="home" href="">home</a></li>
+                    <ul class="openList">
+                        <li id="list2"><a href="#">on the blog </a>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </li>
+                        <div class="submenu">
+                            <ul class="submenu1">
+                                <li>
+                                    <a href="#">growing</a>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </li>
+                                <ul class="submenu1-1">
+                                    <li><a href="">affirmations</a></li>
+                                    <li><a href="">Self improvement</a></li>
+                                </ul>
+                            </ul>
+                            <ul class="submenu2">
+                                <!-- <li id="sideHustle">
+                                        <a href="#">Side hustle</a>
+                                        <i class="fa-solid fa-angle-right"></i>
+
+                                    </li> -->
+                                <ul class="submenu1-2">
+                                    <li><a href="">growing</a></li>
+                                    <li><a href="">finding inspiration </a></li>
+                                </ul>
+                            </ul>
+
+                        </div>
+                    </ul>
+
+                    <li id="list3"><a href="">about me</a></li>
+                    <li id="list4"><a href="">contact</a></li>
+
+                </ul>
+
+
+            </nav>
+            <div class="option">
+
+                <div class="searchBar">
+                    <input type="search" placeholder="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+
+                <div class="menu">
+                    <div class="bar"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="blend"></div>
+    <div class="nav2">
+        <div class="nav2Content">
+            <div class="menu2">
+                <div class="bar"></div>
+            </div>
+            <div class="searchBar2">
+                <input type="search" placeholder="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <li id="list1"><a href="">home</a></li>
+            <ul class="Nav2openList">
+                <li id="list2"><a href="#">on the blog </a>
+                    <i id="angleDown1" class="fa-solid fa-angle-down"></i>
+                </li>
+                <div class="Nav2submenu">
+                    <ul class="Nav2submenu1">
+                        <li id="listSub1">
+                            <a href="#">growing</a>
+                            <i id="angleDown2" class="fa-solid fa-angle-down"></i>
+                        </li>
+                    </ul>
+
+                    <ul class="Nav2submenu1-1">
+                        <li><a href="">celebrating</a></li>
+                        <li><a href="">forgiving</a></li>
+                        <li><a href="">finding inspiration </a></li>
+                    </ul>
+                    <!-- <ul class="Nav2submenu2">
+                            <li id="sideHustle">
+                                <a href="#">Side hustle</a>
+                                <i id="angleDown3" class="fa-solid fa-angle-down"></i>
+                            </li>
+                        </ul>
+                            <ul class="Nav2submenu1-2">
+                                <li><a href="">forgiving</a></li>
+                                <li><a href="">finding inspiration </a></li>
+                            </ul>
+                         -->
+
+                </div>
+            </ul>
+
+            <li id="list3"><a href="">about me</a></li>
+            <li id="list4"><a href="">contact</a></li>
+
+            <div class="logo2">
+                <img src="./logo.png" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+
+        <div class="footerContent">
+            <div class="topLogo">
+                <img src="logo- 1.png" alt="">
+            </div>
+            <div class="middle">
+                <div class="box1">
+                    <h3>quick links</h3>
+                    <li><a href="">about me</a></li>
+                    <li><a href="">contact me</a></li>
+                    <li><a href="">home</a></li>
+                </div>
+                <div class="box2">
+                    <h3>news letter</h3>
+                    <input type="text" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </div>
+                <div class="box3">
+                    <h3>follow me</h3>
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+                <div class="box4">
+                    <h3>contact info</h3>
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>domi_rule@gmail.com</p>
+                </div>
+            </div>
+            <div class="bottom">
+                <fieldset>
+                    <div class="copyright">
+                        <p> © 2024 Crossing Rivers Blog - All right reserved</p>
+                    </div>
+                </fieldset>
+            </div>
+
+
+        </div>
+
+    </footer>
+
+ 
+
+
+    <script src="https://kit.fontawesome.com/ca9a6c5a17.js" crossorigin="anonymous"></script>
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
+
+</body>
+</html>
