@@ -58,7 +58,6 @@ header   {
     right: 0;
     transition: top 0.15s ease;
     background: var(--rosange);
-
     width: 100%;
     padding: 5px 0;
     z-index: 3;
@@ -791,21 +790,18 @@ header .openList .submenu2:hover .submenu1-2 a {
         transition-property: height;
         padding-left: 10px;
 
-
-
-
     }
 
-    .nav2 .Nav2submenu1.active {
-        height:36px;
+    .nav2 .Nav2submenu1.expanded {
+        height:auto;
         transition: 0.3s ease;
         transition-property: height;
 
 
     }
     .nav2 .Nav2submenu2 {
-        overflow-y: hidden;
         height: 0;
+        overflow-y: hidden;
         transition: 0.3s ease;
         transition-property: height;
         padding-left: 10px;
@@ -815,8 +811,24 @@ header .openList .submenu2:hover .submenu1-2 a {
 
     }
 
-    .nav2 .Nav2submenu2.active {
-        height:37px;
+    .nav2 .Nav2submenu2.expanded {
+        height:auto;
+        transition: 0.3s ease;
+        transition-property: height;
+        
+        
+    }
+
+    .nav2 .Nav2submenu3 {
+        overflow-y: hidden;
+        height: 0;
+        transition: 0.3s ease;
+        transition-property: height;
+        padding-left: 10px;
+
+    }
+    .nav2 .Nav2submenu3.expanded {
+        height:auto;
         transition: 0.3s ease;
         transition-property: height;
         
@@ -835,19 +847,9 @@ header #list4{
 }
 
 
-.nav2 .Nav2submenu1-1.active {
-    overflow-y: hidden;
-    height: 0;
-    transition: 0.3s ease;
-    transition-property: height;
-    padding-left: 10px;
-
-
-
-}
 .nav2 .Nav2submenu1-1 {
-    overflow-y: hidden;
     height: 0;
+    overflow-y: hidden;
     transition: 0.3s ease;
     transition-property: height;
     padding-left: 10px;
@@ -855,9 +857,8 @@ header #list4{
 
 }
 
-.nav2 .Nav2submenu1-1.active2 {
-    height: 110px;
-    overflow-y: hidden;
+.nav2 .Nav2submenu1-1.expanded {
+    height: auto;
     transition: 0.3s ease;
     transition-property: height;
 
@@ -873,15 +874,6 @@ header #list4{
 
 
 
-.nav2 .Nav2submenu1-2.active {
-    height: 0;
-    overflow-y: hidden;
-    transition: 0.3s ease;
-    transition-property: height;
-    padding-left: 10px;
-
-
-}
 .nav2 .Nav2submenu1-2 {
     height: 0;
     overflow-y: hidden;
@@ -892,9 +884,8 @@ header #list4{
 
 }
 
-.nav2 .Nav2submenu1-2.active3 {
-    height: 73px;
-    overflow-y: hidden;
+.nav2 .Nav2submenu1-2.expanded {
+    height: auto;
     transition: 0.3s ease;
     transition-property: height;
     
@@ -903,17 +894,41 @@ header #list4{
 
 
 
-.nav2 .Nav2submenu1-2 li {
+.nav2 .Nav2submenu1-3 li {
+    padding-left: 20px;
+
+}
+
+.nav2 .Nav2submenu1-3 {
+    height: 0;
+    overflow-y: hidden;
+    transition: 0.3s ease;
+    transition-property: height;
+    padding-left: 10px;
+    
+
+}
+
+.nav2 .Nav2submenu1-3.expanded {
+    height: auto;
+    transition: 0.3s ease;
+    transition-property: height;
+
+
+}
+
+
+.nav2 .Nav2submenu1-3 li {
     padding-left: 20px;
 
 }
 
 
 
-
 .nav2 #angleDown1,
 .nav2 #angleDown2,
-.nav2 #angleDown3 {
+.nav2 #angleDown3,
+.nav2 #angleDown4 {
     position: absolute;
     right: 0;
     margin-right: 20px;
@@ -925,7 +940,8 @@ header #list4{
 }
 
 .nav2 #angleDown2,
-.nav2 #angleDown3 {
+.nav2 #angleDown3,
+.nav2 #angleDown4 {
     visibility: hidden;
 }
 
@@ -933,17 +949,20 @@ header #list4{
     transform: rotate(-180deg);
     transition: 0.15s ease;
     transition-property: transform;
+ ;
+}
+
+
+.nav2 #angleDown2.visible,
+.nav2 #angleDown3.visible,
+.nav2 #angleDown4.visible {
     visibility: visible;
 }
 
 
-.nav2 #angleDown2.active,
-.nav2 #angleDown3.active {
-    visibility: visible;
-}
-
-.nav2 #angleDown2.active2,
-.nav2 #angleDown3.active3 {
+.nav2 #angleDown2.rotate,
+.nav2 #angleDown3.rotate,
+.nav2 #angleDown4.rotate {
     transform: rotate(-180deg);
     transition: 0.15s ease;
     transition-property: transform;
