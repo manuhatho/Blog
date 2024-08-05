@@ -58,7 +58,7 @@ menu();
 
 function openList() {
 
-  document.addEventListener("DOMContentLoaded", function () {
+
     const Nav2submenu1 = document.querySelector(".Nav2submenu1");
     const Nav2submenu2 = document.querySelector(".Nav2submenu2");
     const Nav2submenu3 = document.querySelector(".Nav2submenu3");
@@ -169,7 +169,7 @@ function openList() {
         }, 300);
       }
     });
-  });
+  
 }
 
 openList();
