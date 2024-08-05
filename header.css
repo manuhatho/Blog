@@ -734,6 +734,7 @@ header .openList .submenu2:hover .submenu1-2 a {
         display: block;
         position: fixed;
         background: var(--rosange2);
+        backdrop-filter: blur(8px);
         width: 100%;
         max-width: 30%;
         height: 100%;
