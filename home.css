@@ -443,10 +443,7 @@ main .section-1 .box button{
             flex-direction: column;
             align-items: center;
         }
-        main .section-1 .box{
-            max-width: 100%;
-           
-        }
+     
     }
  
 
