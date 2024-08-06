@@ -67,7 +67,9 @@ html {
     top: 0;
     width: 100%;
     height: 100%;
-    background: url(heroBackgrounD.jpg);
+    /* background: url(heroBackgrounD.jpg); */
+    background: url(nD.png);
+
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -84,7 +86,7 @@ html {
 
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.532);
+    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.532) 75%, rgba(255, 255, 255, 0)) ;
     transition: background 0.15s ease;
     z-index: 1;
 }
@@ -228,8 +230,10 @@ html {
 
 
 main{
-    padding: 60px 0;
+    padding-top: 60px ;
+    padding-bottom: 100px;
     width: 100%;
+
 }
 main .section-1{
     display: grid;
@@ -387,7 +391,7 @@ main .section-1 .box button{
     }
     .hero .blendB{
         
-    background-color: rgba(0, 0, 0, 0.653);
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.653) 75%, rgba(255, 255, 255, 0));
     transition: background 0.15s ease;
  
  
