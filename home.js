@@ -42,6 +42,7 @@ function scroll() {
 scroll();
 
 const button = document.querySelectorAll('.btn');
+const allShadow = document.querySelectorAll(".shadow");
 
 button.forEach((btn,index)=>{
   btn.addEventListener("mouseover", ()=>{
@@ -60,4 +61,13 @@ button.forEach((btn,index)=>{
 
   })
   
+})
+allShadow.forEach((allShadow)=>{
+
+  allShadow.addEventListener("mouseover",()=>{
+    allShadow.classList.add("opacity");
+  })
+  allShadow.addEventListener("mouseout",()=>{
+    allShadow.classList.remove("opacity");
+  })
 })
