@@ -22,11 +22,12 @@ html{
 }
 body{
     margin-bottom: 450px;
-    border-radius: 0 0 100px 0;
-    box-shadow: 0 0 12px 3px #cda0ca ;
+   
+   
 }
 
 footer {
+
     width: 100%;
     background: var(--rosange);
 
@@ -40,13 +41,13 @@ footer {
     position: fixed;
     z-index: -2;
     bottom: 0;
-    bottom: -350px;
+    /* bottom: -350px; */
     /* bottom: 0; */
     /* opacity: 0; */
     /* transform: translateY(100%); */
     /* transition: translate 0.3s ease, translate 0.3s ease; */
     transition: bottom 0.4s ease;
-    
+  
 }
 .blendF{
     position: absolute;
@@ -273,6 +274,17 @@ footer.reveal{
 }
 
 @media (max-width:819px) {
+
+    footer{
+        position: relative !important;
+        z-index: inherit;
+    }
+    body{
+        margin-bottom: 0;
+    }
+    .blendF{
+        position: absolute;
+    }
     .footerContent h3::before,
 .footerContent h3::after {
     width: 100%;

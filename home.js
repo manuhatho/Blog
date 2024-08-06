@@ -2,6 +2,8 @@ function scroll() {
   const hero = document.querySelector(".hero");
   const blendB = document.querySelector(".blendB");
   const angleDown = document.querySelector(".fa-angles-down");
+ 
+
 
 
   document.addEventListener("scroll", () => {
@@ -11,6 +13,7 @@ function scroll() {
       blendB.classList.add("height");
       hero.classList.add("initial");
       angleDown.classList.add("visibility");
+
  
     }
 
@@ -37,3 +40,24 @@ function scroll() {
   });
 }
 scroll();
+
+const button = document.querySelectorAll('.btn');
+
+button.forEach((btn,index)=>{
+  btn.addEventListener("mouseover", ()=>{
+
+    const allShadow = document.querySelectorAll(".shadow");
+    const shadow = allShadow[index];
+    shadow.classList.add("opacity");
+
+  })
+  
+  btn.addEventListener("mouseout", ()=>{
+
+    const allShadow = document.querySelectorAll(".shadow");
+    const shadow = allShadow[index];
+    shadow.classList.remove("opacity");
+
+  })
+  
+})
