@@ -78,8 +78,8 @@ allShadow.forEach((allShadow)=>{
     
   })
   allShadow.addEventListener("mouseout",()=>{
-    const textB = allShadow.closest(".box").querySelector('.text');
-    textB.classList.remove("translate")
+    const textBox = allShadow.closest(".box").querySelector('.text');
+    textBox.classList.remove("translate")
     allShadow.classList.remove("opacity");
   })
 })
