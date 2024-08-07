@@ -64,31 +64,40 @@ button.forEach((btn,index)=>{
   })
   
 })
+
 allShadow.forEach((allShadow)=>{
 
   allShadow.addEventListener("mouseover",()=>{
+
+    const textB = allShadow.closest(".box").querySelector('.text');
+    textB.classList.add("translate")
     allShadow.classList.add("opacity");
+    
+    
+
+    
   })
   allShadow.addEventListener("mouseout",()=>{
+    const textB = allShadow.closest(".box").querySelector('.text');
+    textB.classList.remove("translate")
     allShadow.classList.remove("opacity");
   })
 })
 
+
 const textBox = document.querySelectorAll(".section-2 .box .text");
-console.log(textBox);
 
-
-
- textBox.forEach((textBox)=>{
+ textBox.forEach((textBox,index)=>{
   
   textBox.addEventListener("mouseover",()=>{
-    
-    allBox.classList.add("opacity");
+    const allShadow = document.querySelectorAll(".section-2 .box .shadow");
+    const indexShadow = allShadow[index];
+    indexShadow.classList.add("opacity");
    
   })
-  allBox.addEventListener("mouseout",()=>{
+  textBox.addEventListener("mouseout",()=>{
    
-    allBox.classList.remove("opacity");
+    textBox.classList.remove("opacity");
   
   })
  })
