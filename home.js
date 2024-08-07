@@ -20,7 +20,7 @@ function scroll() {
     let lastScroll = window.scrollY;
 
     window.addEventListener("scroll", () => {
-      console.log("je scrolle");
+      
       const header = document.querySelector("header");
       let currentScroll = window.scrollY;
       if (currentScroll < lastScroll && currentScroll === 0) {
@@ -35,11 +35,13 @@ function scroll() {
     });
 
     main.addEventListener("mouseover", () => {
-      console.log("je scrolle");
+    
     });
   });
 }
 scroll();
+
+
 
 const button = document.querySelectorAll('.btn');
 const allShadow = document.querySelectorAll(".shadow");
@@ -71,3 +73,23 @@ allShadow.forEach((allShadow)=>{
     allShadow.classList.remove("opacity");
   })
 })
+
+const textBox = document.querySelectorAll(".section-2 .box .text");
+console.log(textBox);
+
+
+
+ textBox.forEach((textBox)=>{
+  
+  textBox.addEventListener("mouseover",()=>{
+    
+    allBox.classList.add("opacity");
+   
+  })
+  allBox.addEventListener("mouseout",()=>{
+   
+    allBox.classList.remove("opacity");
+  
+  })
+ })
+
