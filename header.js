@@ -62,19 +62,20 @@ function openList() {
     const Nav2submenu1 = document.querySelector(".Nav2submenu1");
     const Nav2submenu2 = document.querySelector(".Nav2submenu2");
     const Nav2submenu3 = document.querySelector(".Nav2submenu3");
-    const Nav2submenu1Drop = document.querySelector(".Nav2submenu1-1");
-    const Nav2submenu2Drop = document.querySelector(".Nav2submenu1-2");
-    const Nav2submenu3Drop = document.querySelector(".Nav2submenu1-3");
+    const Nav2submenu4 = document.querySelector(".Nav2submenu4");
+    // const Nav2submenu1Drop = document.querySelector(".Nav2submenu1-1");
+    // const Nav2submenu2Drop = document.querySelector(".Nav2submenu1-2");
+    // const Nav2submenu3Drop = document.querySelector(".Nav2submenu1-3");
     const angleDown1 = document.getElementById("angleDown1");
-    const angleDown2 = document.getElementById("angleDown2");
-    const angleDown3 = document.getElementById("angleDown3");
-    const angleDown4 = document.getElementById("angleDown4");
+    // const angleDown2 = document.getElementById("angleDown2");
+    // const angleDown3 = document.getElementById("angleDown3");
+    // const angleDown4 = document.getElementById("angleDown4");
 
     angleDown1.addEventListener("click", () => {
     
-      angleDown2.classList.toggle("visible");
-      angleDown3.classList.toggle("visible");
-      angleDown4.classList.toggle("visible");
+      // angleDown2.classList.toggle("visible");
+      // angleDown3.classList.toggle("visible");
+      // angleDown4.classList.toggle("visible");
     
    
       
@@ -118,57 +119,70 @@ function openList() {
           Nav2submenu3.style.height = "auto";
         });
       }
-    });
-    angleDown2.addEventListener("click", () => {
-      angleDown2.classList.toggle("rotate");
-      if (Nav2submenu1Drop.classList.contains("expanded")) {
-        Nav2submenu1Drop.style.height = `${Nav2submenu1Drop.scrollHeight}px`;
+      if (Nav2submenu4.classList.contains("expanded")) {
+        Nav2submenu4.style.height = `${Nav2submenu4.scrollHeight}px`;
         setTimeout(() => {
-          Nav2submenu1Drop.style.height = "0";
+          Nav2submenu4.style.height = "0";
         }, 1);
-        Nav2submenu1Drop.classList.remove("expanded");
+        Nav2submenu4.classList.remove("expanded");
       } else {
-        Nav2submenu1Drop.style.height = `${Nav2submenu1Drop.scrollHeight}px`;
-        Nav2submenu1Drop.classList.add("expanded");
+        Nav2submenu4.style.height = `${Nav2submenu4.scrollHeight}px`;
+        Nav2submenu4.classList.add("expanded");
         setTimeout(() => {
-          Nav2submenu1Drop.style.height = "auto";
-        }, 300);
+          Nav2submenu4.style.height = "auto";
+        });
       }
     });
+    // angleDown2.addEventListener("click", () => {
+    //   angleDown2.classList.toggle("rotate");
+    //   if (Nav2submenu1Drop.classList.contains("expanded")) {
+    //     Nav2submenu1Drop.style.height = `${Nav2submenu1Drop.scrollHeight}px`;
+    //     setTimeout(() => {
+    //       Nav2submenu1Drop.style.height = "0";
+    //     }, 1);
+    //     Nav2submenu1Drop.classList.remove("expanded");
+    //   } else {
+    //     Nav2submenu1Drop.style.height = `${Nav2submenu1Drop.scrollHeight}px`;
+    //     Nav2submenu1Drop.classList.add("expanded");
+    //     setTimeout(() => {
+    //       Nav2submenu1Drop.style.height = "auto";
+    //     }, 300);
+    //   }
+    // });
 
-    angleDown3.addEventListener("click", () => {
-      angleDown3.classList.toggle("rotate");
-      if (Nav2submenu2Drop.classList.contains("expanded")) {
-        Nav2submenu2Drop.style.height = `${Nav2submenu2Drop.scrollHeight}px`;
-        setTimeout(() => {
-          Nav2submenu2Drop.style.height = "0";
-        }, 1);
-        Nav2submenu2Drop.classList.remove("expanded");
-      } else {
-        Nav2submenu2Drop.style.height = `${Nav2submenu2Drop.scrollHeight}px`;
-        Nav2submenu2Drop.classList.add("expanded");
-        setTimeout(() => {
-          Nav2submenu2Drop.style.height = "auto";
-        }, 300);
-      }
-    });
+    // angleDown3.addEventListener("click", () => {
+    //   angleDown3.classList.toggle("rotate");
+    //   if (Nav2submenu2Drop.classList.contains("expanded")) {
+    //     Nav2submenu2Drop.style.height = `${Nav2submenu2Drop.scrollHeight}px`;
+    //     setTimeout(() => {
+    //       Nav2submenu2Drop.style.height = "0";
+    //     }, 1);
+    //     Nav2submenu2Drop.classList.remove("expanded");
+    //   } else {
+    //     Nav2submenu2Drop.style.height = `${Nav2submenu2Drop.scrollHeight}px`;
+    //     Nav2submenu2Drop.classList.add("expanded");
+    //     setTimeout(() => {
+    //       Nav2submenu2Drop.style.height = "auto";
+    //     }, 300);
+    //   }
+    // });
 
-    angleDown4.addEventListener("click", () => {
-      angleDown4.classList.toggle("rotate");
-      if (Nav2submenu3Drop.classList.contains("expanded")) {
-        Nav2submenu3Drop.style.height = `${Nav2submenu3Drop.scrollHeight}px`;
-        setTimeout(() => {
-          Nav2submenu3Drop.style.height = "0";
-        }, 1);
-        Nav2submenu3Drop.classList.remove("expanded");
-      } else {
-        Nav2submenu3Drop.style.height = `${Nav2submenu3Drop.scrollHeight}px`;
-        Nav2submenu3Drop.classList.add("expanded");
-        setTimeout(() => {
-          Nav2submenu3Drop.style.height = "auto";
-        }, 300);
-      }
-    });
+    // angleDown4.addEventListener("click", () => {
+    //   angleDown4.classList.toggle("rotate");
+    //   if (Nav2submenu3Drop.classList.contains("expanded")) {
+    //     Nav2submenu3Drop.style.height = `${Nav2submenu3Drop.scrollHeight}px`;
+    //     setTimeout(() => {
+    //       Nav2submenu3Drop.style.height = "0";
+    //     }, 1);
+    //     Nav2submenu3Drop.classList.remove("expanded");
+    //   } else {
+    //     Nav2submenu3Drop.style.height = `${Nav2submenu3Drop.scrollHeight}px`;
+    //     Nav2submenu3Drop.classList.add("expanded");
+    //     setTimeout(() => {
+    //       Nav2submenu3Drop.style.height = "auto";
+    //     }, 300);
+    //   }
+    // });
   
 }
 

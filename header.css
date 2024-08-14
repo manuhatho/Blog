@@ -243,10 +243,16 @@ header nav ul a {
 }
 
 header .submenu {
-
+    
     height: 0;
     scale: 0;
-
+    
+}
+header .submenu3{
+    display: none;
+}
+header .openList:hover .submenu3{
+    display: block;
 }
 
 header .nav li {
@@ -289,6 +295,7 @@ header .nav #list1:after{
 }
 header .nav #list2{
     position: relative;
+   
 }
 header .nav #list2:before{
    content: "";
@@ -379,12 +386,14 @@ header nav .submenu1-1 li:last-of-type{
     border-bottom: none !important;
 }
 header nav .submenu1 li:hover,
-header nav .submenu2 li:hover{
+header nav .submenu2 li:hover,
+header nav .submenu3 li:hover{
     background-color: var(--vertB);
 
 }
 header nav .submenu1 a:hover,
-header nav .submenu2 a:hover{
+header nav .submenu2 a:hover,
+header nav .submenu3 a:hover{
    color: white;
 }
 header nav {
@@ -436,8 +445,8 @@ header .openList {
 }
 
 header .openList .submenu a {
-    text-transform: capitalize;
-    margin-left: 10px;
+    padding: 0 10px;
+ 
 }
 
 header .openList .fa-angle-down {
@@ -448,6 +457,7 @@ header .openList .fa-angle-down {
 header .openList .fa-angle-right {
     vertical-align: middle;
     margin-left: 5px;
+ 
 
 }
 
@@ -455,20 +465,18 @@ header .openList .fa-angle-right {
 header .openList:hover .submenu {
     /* height: initial; */
     /* width: initial; */
+ 
     transition: 0.2s ease-in-out;
     scale: 1;
     position: fixed;
-    width: 125px;
+    width: auto;
     height: auto;
-    margin-left: 13px;
     background-color: var(--vert);
-    /* text-align: center; */
+
     backdrop-filter: blur(5px);
     border: 1px solid black;
     top: 38px;
     z-index: 1;
-
-
 
 }
 
@@ -829,6 +837,21 @@ header .openList .submenu2:hover .submenu1-2 a {
 
     }
     .nav2 .Nav2submenu3.expanded {
+        height:auto;
+        transition: 0.3s ease;
+        transition-property: height;
+        
+        
+    }
+    .nav2 .Nav2submenu4 {
+        overflow-y: hidden;
+        height: 0;
+        transition: 0.3s ease;
+        transition-property: height;
+        padding-left: 10px;
+
+    }
+    .nav2 .Nav2submenu4.expanded {
         height:auto;
         transition: 0.3s ease;
         transition-property: height;
