@@ -264,6 +264,11 @@ body {
     .main-content {
         padding: 10px;
         height: 700px;
+        overflow-y: scroll;
+    }
+    main-content::-webkit-scrollbar{
+        width: 0;
+        background-color: transparent;
     }
     .connexion {
         max-height: 535px;   
@@ -276,10 +281,7 @@ body {
 }
 
 @media (max-width: 962px) {
-    body {
-        display: inherit;
-        overflow-y: hidden;
-    }
+  
     
     .right-box .logo {
         background-color: transparent;
@@ -291,7 +293,7 @@ body {
     }
     .right-box  {
         max-width: 50%;
-        border: 1px solid gray;
+        border: 2px solid gray;
         background-color: transparent;
         backdrop-filter: blur(8px);
         color: white;
@@ -376,8 +378,9 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        overflow-y: hidden;
     }
-
+  
     .main-content {
         padding: 0;
     }
