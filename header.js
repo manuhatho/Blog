@@ -7,8 +7,10 @@ function scroll() {
     let scrollTop = window.scrollY || document.documentElement.scrollTop;
     if (scrollTop > previewPosition) {
       header.style.top = "-100px";
+
     } else {
       header.style.top = "0";
+      
     }
 
     previewPosition = scrollTop;
@@ -59,10 +61,9 @@ menu();
 function openList() {
 
 
-    const Nav2submenu1 = document.querySelector(".Nav2submenu1");
-    const Nav2submenu2 = document.querySelector(".Nav2submenu2");
-    const Nav2submenu3 = document.querySelector(".Nav2submenu3");
-    const Nav2submenu4 = document.querySelector(".Nav2submenu4");
+    const Nav2submenu1 = document.querySelectorAll(".Nav2submenu1");
+    console.log(Nav2submenu1);
+ 
     // const Nav2submenu1Drop = document.querySelector(".Nav2submenu1-1");
     // const Nav2submenu2Drop = document.querySelector(".Nav2submenu1-2");
     // const Nav2submenu3Drop = document.querySelector(".Nav2submenu1-3");
@@ -78,112 +79,28 @@ function openList() {
       // angleDown4.classList.toggle("visible");
     
    
-      
-      if (Nav2submenu1.classList.contains("expanded")) {
-        Nav2submenu1.style.height = `${Nav2submenu1.scrollHeight}px`;
-        setTimeout(() => {
-          Nav2submenu1.style.height = "0";
-        }, 1);
-        Nav2submenu1.classList.remove("expanded");
-      } else {
-        Nav2submenu1.style.height = `${Nav2submenu1.scrollHeight}px`;
-        Nav2submenu1.classList.add("expanded");
-        setTimeout(() => {
-          Nav2submenu1.style.height = "auto";
-        }, 300);
-      }
-      if (Nav2submenu2.classList.contains("expanded")) {
-        Nav2submenu2.style.height = `${Nav2submenu2.scrollHeight}px`;
-        setTimeout(() => {
-          Nav2submenu2.style.height = "0";
-        }, 1);
-        Nav2submenu2.classList.remove("expanded");
-      } else {
-        Nav2submenu2.style.height = `${Nav2submenu2.scrollHeight}px`;
-        Nav2submenu2.classList.add("expanded");
-        setTimeout(() => {
-          Nav2submenu2.style.height = "auto";
-        });
-      }
+      Nav2submenu1.forEach((submenu) => {
 
-      if (Nav2submenu3.classList.contains("expanded")) {
-        Nav2submenu3.style.height = `${Nav2submenu3.scrollHeight}px`;
-        setTimeout(() => {
-          Nav2submenu3.style.height = "0";
-        }, 1);
-        Nav2submenu3.classList.remove("expanded");
-      } else {
-        Nav2submenu3.style.height = `${Nav2submenu3.scrollHeight}px`;
-        Nav2submenu3.classList.add("expanded");
-        setTimeout(() => {
-          Nav2submenu3.style.height = "auto";
-        });
-      }
-      if (Nav2submenu4.classList.contains("expanded")) {
-        Nav2submenu4.style.height = `${Nav2submenu4.scrollHeight}px`;
-        setTimeout(() => {
-          Nav2submenu4.style.height = "0";
-        }, 1);
-        Nav2submenu4.classList.remove("expanded");
-      } else {
-        Nav2submenu4.style.height = `${Nav2submenu4.scrollHeight}px`;
-        Nav2submenu4.classList.add("expanded");
-        setTimeout(() => {
-          Nav2submenu4.style.height = "auto";
-        });
-      }
+        console.log(submenu);
+        
+
+        if (submenu.classList.contains("expanded")) {
+          submenu.style.height = `${submenu.scrollHeight}px`;
+          setTimeout(() => {
+            submenu.style.height = "0";
+          }, 1);
+          submenu.classList.remove("expanded");
+        } else {
+          submenu.style.height = `${submenu.scrollHeight}px`;
+          submenu.classList.add("expanded");
+          setTimeout(() => {
+            submenu.style.height = "auto";
+          }, 300);
+        }
+
+      });
+    
     });
-    // angleDown2.addEventListener("click", () => {
-    //   angleDown2.classList.toggle("rotate");
-    //   if (Nav2submenu1Drop.classList.contains("expanded")) {
-    //     Nav2submenu1Drop.style.height = `${Nav2submenu1Drop.scrollHeight}px`;
-    //     setTimeout(() => {
-    //       Nav2submenu1Drop.style.height = "0";
-    //     }, 1);
-    //     Nav2submenu1Drop.classList.remove("expanded");
-    //   } else {
-    //     Nav2submenu1Drop.style.height = `${Nav2submenu1Drop.scrollHeight}px`;
-    //     Nav2submenu1Drop.classList.add("expanded");
-    //     setTimeout(() => {
-    //       Nav2submenu1Drop.style.height = "auto";
-    //     }, 300);
-    //   }
-    // });
-
-    // angleDown3.addEventListener("click", () => {
-    //   angleDown3.classList.toggle("rotate");
-    //   if (Nav2submenu2Drop.classList.contains("expanded")) {
-    //     Nav2submenu2Drop.style.height = `${Nav2submenu2Drop.scrollHeight}px`;
-    //     setTimeout(() => {
-    //       Nav2submenu2Drop.style.height = "0";
-    //     }, 1);
-    //     Nav2submenu2Drop.classList.remove("expanded");
-    //   } else {
-    //     Nav2submenu2Drop.style.height = `${Nav2submenu2Drop.scrollHeight}px`;
-    //     Nav2submenu2Drop.classList.add("expanded");
-    //     setTimeout(() => {
-    //       Nav2submenu2Drop.style.height = "auto";
-    //     }, 300);
-    //   }
-    // });
-
-    // angleDown4.addEventListener("click", () => {
-    //   angleDown4.classList.toggle("rotate");
-    //   if (Nav2submenu3Drop.classList.contains("expanded")) {
-    //     Nav2submenu3Drop.style.height = `${Nav2submenu3Drop.scrollHeight}px`;
-    //     setTimeout(() => {
-    //       Nav2submenu3Drop.style.height = "0";
-    //     }, 1);
-    //     Nav2submenu3Drop.classList.remove("expanded");
-    //   } else {
-    //     Nav2submenu3Drop.style.height = `${Nav2submenu3Drop.scrollHeight}px`;
-    //     Nav2submenu3Drop.classList.add("expanded");
-    //     setTimeout(() => {
-    //       Nav2submenu3Drop.style.height = "auto";
-    //     }, 300);
-    //   }
-    // });
-  
 }
 
 openList();

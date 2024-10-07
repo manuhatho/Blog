@@ -4,7 +4,7 @@
     /* --vertB: #217776; */
     --vertB: rgb(238, 144, 85) ;
     --blue:#ffffff;
-    --rosange: linear-gradient(to right, white 0%,#fca491aa 0%, #f57093a0 40%, #cda0ca80 100%);
+    --rosange: linear-gradient(to right, white 0%,#fca49133 0%, #f570935b 40%, #cda0ca80 100%);
     --rosange2: linear-gradient(to top, white 0%,#fca491aa 0%, #f57093a0 40%, #cda0ca80 100%);
     --beige : #fca491;
     --violet: #cda0ca ;
@@ -57,11 +57,10 @@ header   {
     left: 0;
     right: 0;
     transition: top 0.15s ease;
-    background: var(--rosange);
+    /* background: var(--rosange); */
     width: 100%;
-    padding: 5px 0;
+    padding: 30px 0;
     z-index: 3;
-    backdrop-filter: blur(5px);
     border-radius: 0 0 50px 0;
 }
 
@@ -86,9 +85,10 @@ header.active{
 header .content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
+    
     width: 100%;
-    max-width: 95%;
+    max-width: 80%;
     margin: 0 auto;
     padding: 3px 0;
     position: relative;
@@ -102,6 +102,7 @@ header .content {
 header .logo {
 
     width: 200px;
+   
 }
 
 header .logo img {
@@ -227,23 +228,35 @@ header .menu.active::after {
 }
 
 
+header .nav img {
+    height: 25px;
+}
 header .nav {
     display: flex;
     align-items: center;
     font-family: poppins;
-    font-size: 15px;
+    font-size: 14px;
+    background: var(--rosange);
+    border-radius: 50px;
+    padding: 15px;
+    /* margin-right: 100px ; */
+    position: relative;
+    z-index: 2;
+    backdrop-filter: (10px);
+    
 
 }
 
 header nav ul a {
     color: white;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: 500;
 }
 
 header .submenu {
-    
+   
+    width: 0;
     height: 0;
     scale: 0;
     
@@ -269,7 +282,7 @@ header .nav #home{
 header .nav #list1{
     position: relative;
 }
-header .nav #list1:before{
+/* header .nav #list1:before{
    content: "";
    position: absolute;
    width: 45%;
@@ -371,7 +384,7 @@ header .nav #list4:after{
    bottom: 0;
    background-color: white;
    display: block;
-}
+} */
 
 header nav .submenu1 li{
     border-bottom: none !important;
@@ -388,7 +401,8 @@ header nav .submenu1-1 li:last-of-type{
 header nav .submenu1 li:hover,
 header nav .submenu2 li:hover,
 header nav .submenu3 li:hover{
-    background-color: var(--vertB);
+    /* background-color: var(--vertB); */
+    background-color: rgba(177, 175, 175, 0.274);
 
 }
 header nav .submenu1 a:hover,
@@ -403,41 +417,38 @@ header nav {
     justify-content: space-evenly;
 }
 
-header .searchBar {
-    margin: 0 10px;
-    position: relative;
+header .login button {
+    padding: 14px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: white;
+    border-radius: 50px;
+    font-family: poppins;
+    cursor: pointer;
+    width: fit-content;
+    
+    transition: 0.25s ease;
+    
+    
     
 }
-
-
-header .searchBar i {
-    color: white;
-    position: absolute;
-    top: 25%;
-    right: 10px;
-    cursor: pointer;
-
+header .login button #user{
+    height: 30px;
+    vertical-align:text-bottom;
+    background-color: white;
+    border-radius: 50%;
+}
+header .login button #setting{
+    height: 20px;
+    vertical-align:text-bottom;
 }
 
-header .searchBar input {
-    padding: 5px;
+header .login button:hover{
+    transition: 0.25s ease;
     background-color: transparent;
-    border: 1px solid white;
-    color: white;
-    width: 100%;
-  
-    border-radius: 15px;
-    padding-left: 10px;
-
+    border: 1px solid #fff;
+    color: #fff;
 }
-
-
-header .searchBar input:focus {
-    outline: none;
-    box-shadow: 0 0 5px 2px #217776b1;
-    border: none;
-}
-
 header .openList {
     position: relative;
     user-select: none;
@@ -463,20 +474,18 @@ header .openList .fa-angle-right {
 
 
 header .openList:hover .submenu {
-    /* height: initial; */
-    /* width: initial; */
- 
-    transition: 0.2s ease-in-out;
     scale: 1;
     position: fixed;
     width: auto;
     height: auto;
-    background-color: var(--vert);
+    background: var(--rosange);
+    backdrop-filter: blur(8px);
+    border-radius: 0 0 30px 30px;
+    top: 75px;
+    z-index: 1 ;
+    padding: 10px 0 10px 0;
+    transition: 0.2s ease-in-out;
 
-    backdrop-filter: blur(5px);
-    border: 1px solid black;
-    top: 38px;
-    z-index: 1;
 
 }
 
@@ -493,6 +502,7 @@ header .openList:hover .submenu li {
     padding: 8px 0;
     color: white;
     text-transform: capitalize;
+    border-radius: 30px;
 
 
 
@@ -500,6 +510,7 @@ header .openList:hover .submenu li {
 
 header .openList:hover .submenu li {
     margin: 0;
+    
 }
 
 

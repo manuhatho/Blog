@@ -52,7 +52,7 @@
                         <label for="">I accept the <a href="">Privacy Policy</a></label>
                     </div>
 
-                    <button type="submit">Create an Account</button>
+                    <button>Create an Account</button>
 
                     <div class="login">
                         <p>Already have an account?
@@ -79,7 +79,7 @@
                         <a style="text-decoration: underline;" href="">Forgot password</a>
                     </div>
 
-                    <button type="submit">Log In</button>
+                    <button>Log In</button>
 
                     <div class="login">
                         <p>Don't have an account?
