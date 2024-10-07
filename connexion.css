@@ -276,6 +276,11 @@ body {
 }
 
 @media (max-width: 962px) {
+    body {
+        display: inherit;
+        overflow-y: hidden;
+    }
+    
     .right-box .logo {
         background-color: transparent;
         top: 45px;
@@ -363,6 +368,14 @@ body {
 @media (max-width: 475px) {
     .right-box {
         max-width: 100%;
+    }
+    body {
+        background:url(connexion.jpg);
+        background-color: rgba(0, 0, 0, 0.308);
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     .main-content {
